@@ -9,6 +9,7 @@ Usage: python3 mls_listing_sheet_pdf.py "123 Main St"
 import sys
 import time
 import os
+import re
 import base64
 import requests
 import argparse
@@ -84,6 +85,67 @@ def login_to_paragon(driver):
     dismiss_popups(driver)
     time.sleep(1)
     print("✅ Logged into Paragon")
+
+
+def lookup_mls_number(address):
+    """Search real estate websites to find MLS number for a condo/unit address"""
+    import urllib.parse
+    query = urllib.parse.quote(f"{address} MLS number site:zillow.com OR site:realtor.com OR site:redfin.com")
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+    }
+    
+    # Try DuckDuckGo HTML search
+    try:
+        resp = requests.get(f"https://html.duckduckgo.com/html/?q={query}", headers=headers, timeout=15)
+        text = resp.text
+        
+        # Look for MLS patterns in results
+        mls_patterns = [
+            r'MLS[#:\s]*\s*(\d{5,10})',
+            r'MLS\s*(?:ID|Number|No\.?|#)?[:\s]*(\d{5,10})',
+            r'#\s*(\d{7,10})',  # Common MLS format
+        ]
+        for pattern in mls_patterns:
+            matches = re.findall(pattern, text, re.IGNORECASE)
+            if matches:
+                mls = matches[0]
+                print(f"🔍 Found MLS# {mls} from web search")
+                return mls
+    except Exception as e:
+        print(f"⚠️ Web search failed: {e}")
+    
+    # Try Zillow directly
+    try:
+        search_addr = address.replace(' ', '-').replace('#', '').replace(',', '')
+        resp = requests.get(f"https://www.zillow.com/homes/{search_addr}_rb/", headers=headers, timeout=15)
+        mls_matches = re.findall(r'MLS[#:\s]*\s*(\d{5,10})', resp.text, re.IGNORECASE)
+        if mls_matches:
+            mls = mls_matches[0]
+            print(f"🔍 Found MLS# {mls} from Zillow")
+            return mls
+    except Exception as e:
+        print(f"⚠️ Zillow lookup failed: {e}")
+    
+    return None
+
+
+def has_unit_number(address):
+    """Check if address looks like it has a unit/apt number"""
+    patterns = [
+        r'#\d+', r'\bunit\b', r'\bapt\b', r'\bsuite\b',
+        r'\b\d{1,5}\s+[A-Z]?$',  # ends with a number that could be unit
+        r'\b(?:N|S|E|W|NE|NW|SE|SW)\s+\w+\s+(?:Blvd|Ave|St|Dr|Rd|Ln|Way|Ct)\s+\d+',  # address + number at end
+    ]
+    for p in patterns:
+        if re.search(p, address, re.IGNORECASE):
+            return True
+    # Simple heuristic: if last token is a number and address has 4+ tokens, likely unit
+    parts = address.strip().split()
+    if len(parts) >= 4 and parts[-1].isdigit():
+        return True
+    return False
 
 
 def search_listing(driver, address):
@@ -464,9 +526,33 @@ def main():
         search_listing(driver, address)
         
         if not switch_to_listing_iframe(driver):
-            print("❌ Failed: could not find listing iframe")
-            driver.quit()
-            sys.exit(1)
+            # If address has a unit number, try web lookup for MLS#
+            if has_unit_number(address):
+                print("⚠️ No results — condo unit? Looking up MLS# online...")
+                mls_num = lookup_mls_number(address)
+                if mls_num:
+                    print(f"🔄 Retrying with MLS# {mls_num}")
+                    # Navigate back to Paragon search
+                    driver.get(driver.current_url)
+                    time.sleep(5)
+                    dismiss_popups(driver)
+                    time.sleep(2)
+                    search_listing(driver, mls_num)
+                    if not switch_to_listing_iframe(driver):
+                        print("❌ Failed: MLS# search also returned no results")
+                        driver.quit()
+                        sys.exit(1)
+                    # Update output filename to include MLS#
+                    safe_name = f"{address.replace('/', '-').strip()} (MLS {mls_num})"
+                    output_path = os.path.join(OUTPUT_DIR, f"{safe_name}.pdf")
+                else:
+                    print("❌ Could not find MLS# online either")
+                    driver.quit()
+                    sys.exit(1)
+            else:
+                print("❌ Failed: could not find listing iframe")
+                driver.quit()
+                sys.exit(1)
 
         if click_toggle_pdf_and_capture(driver, output_path):
             print(f"\n🎉 Success! Listing sheet saved to: {output_path}")
