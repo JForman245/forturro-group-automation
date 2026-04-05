@@ -469,19 +469,58 @@ def download_pdf(driver, url, output_path):
             return True
         return False
     
-    # Regular URL - download with session cookies
-    try:
-        resp = session.get(url, stream=True, timeout=30)
-        resp.raise_for_status()
-        with open(output_path, 'wb') as f:
-            for chunk in resp.iter_content(chunk_size=8192):
-                f.write(chunk)
-        size_kb = os.path.getsize(output_path) / 1024
-        print(f"✅ PDF downloaded: {output_path} ({size_kb:.0f} KB)")
-        return True
-    except Exception as e:
-        print(f"⚠️ Download failed: {e}")
-        return False
+    # Regular URL - download with session cookies (with retries)
+    max_retries = 3
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"📥 Download attempt {attempt}/{max_retries}...")
+            resp = session.get(url, stream=True, timeout=120)
+            resp.raise_for_status()
+            with open(output_path, 'wb') as f:
+                for chunk in resp.iter_content(chunk_size=32768):
+                    f.write(chunk)
+            size_kb = os.path.getsize(output_path) / 1024
+            if size_kb < 5:
+                print(f"⚠️ File too small ({size_kb:.0f} KB), retrying...")
+                os.remove(output_path)
+                time.sleep(3)
+                continue
+            print(f"✅ PDF downloaded: {output_path} ({size_kb:.0f} KB)")
+            return True
+        except Exception as e:
+            print(f"⚠️ Attempt {attempt} failed: {e}")
+            if attempt < max_retries:
+                wait_time = attempt * 5
+                print(f"⏳ Waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+            else:
+                # Last resort: try downloading via Selenium JavaScript fetch
+                print("📄 Trying JavaScript fetch fallback...")
+                try:
+                    pdf_base64 = driver.execute_script("""
+                        var url = arguments[0];
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('GET', url, false);
+                        xhr.responseType = 'arraybuffer';
+                        xhr.send();
+                        if (xhr.status === 200) {
+                            var bytes = new Uint8Array(xhr.response);
+                            var binary = '';
+                            for (var i = 0; i < bytes.length; i++) {
+                                binary += String.fromCharCode(bytes[i]);
+                            }
+                            return btoa(binary);
+                        }
+                        return null;
+                    """, url)
+                    if pdf_base64:
+                        save_pdf(pdf_base64, output_path)
+                        return True
+                except Exception as js_err:
+                    print(f"⚠️ JS fallback also failed: {js_err}")
+                print(f"❌ All download attempts failed")
+                return False
+    return False
 
 
 def save_pdf(pdf_base64, output_path):
