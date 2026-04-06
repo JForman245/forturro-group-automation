@@ -286,8 +286,8 @@ def send_whatsapp_alert(lead_info):
     
     subprocess.run(
         ["openclaw", "message", "send",
-         "--channel", "whatsapp",
-         "--target", "120363029651955145@g.us",
+         "--channel", "telegram",
+         "--target", "8685619460",
          "--message", msg],
         capture_output=True, text=True
     )
