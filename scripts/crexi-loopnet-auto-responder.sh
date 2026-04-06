@@ -199,8 +199,7 @@ def add_to_fub(lead_info):
             note_body += f"\nAddress: {lead_info['address']}"
         if lead_info.get("message"):
             note_body += f"\nMessage: {lead_info['message']}"
-        if lead_info.get("listing_id"):
-            note_body += f"\nListing ID: {lead_info['listing_id']}"
+        # Listing ID excluded per Jeff's preference
         
         requests.post(
             "https://api.followupboss.com/v1/notes",
