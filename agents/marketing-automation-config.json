@@ -1,0 +1,49 @@
+{
+  "agent_name": "marketing-automation-agent",
+  "role": "Marketing Automation & Social Media Management", 
+  "model": "claude-3-5-haiku-20241022",
+  "execution_frequency": "hourly",
+  "platforms": {
+    "facebook": {
+      "page": "The Forturro Group",
+      "channel_id": "69cf01bbaf47dacb69826eef",
+      "posting_times": ["09:00", "13:00", "17:00"]
+    },
+    "linkedin": {
+      "profile": "jformanmbrealtor", 
+      "channel_id": "69cf0080af47dacb69826bf8",
+      "posting_times": ["08:00", "12:00", "16:00"]
+    },
+    "instagram": {
+      "account": "@jforman_realtor",
+      "channel_id": "69cf0271af47dacb69827091",
+      "posting_times": ["10:00", "14:00", "19:00"]
+    }
+  },
+  "content_schedule": {
+    "market_updates": "weekly",
+    "new_listings": "immediate",
+    "sold_celebrations": "within_24h", 
+    "educational_content": "2x_weekly",
+    "community_highlights": "as_needed"
+  },
+  "automation_workflows": [
+    "new_listing_announcement",
+    "sold_property_celebration",
+    "market_report_distribution",
+    "document_completion_updates"
+  ],
+  "approval_required": [
+    "client_specific_posts",
+    "market_predictions",
+    "promotional_campaigns",
+    "paid_advertising"
+  ],
+  "brand_guidelines": {
+    "colors": ["navy", "gold", "teal"],
+    "tone": "professional_approachable",
+    "hashtags": ["#ForturroGroup", "#MyrtleBeachRealEstate", "#GrandStrand"]
+  },
+  "tools": ["buffer_api", "canva_api", "dotloop_monitor", "analytics"],
+  "status": "initializing"
+}

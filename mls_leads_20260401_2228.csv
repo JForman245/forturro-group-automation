@@ -1,0 +1,498 @@
+category,status,mls_number,price,listing_class,property_type,address,city,zip,area,bedrooms,full_baths,half_baths,hoa_monthly
+expired,EXPIRED,2508724,"$10,417",LAND,Commercial Lot - Lease,1449 N Highway 17,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,,,,
+expired,EXPIRED,2522409,"$22,500",LAND,Residential Lot,8340 Bucksport Heights Circle,Conway,29527,25B Conway Area--between Wacc. River & 701 / includes Bucksport,,,,
+expired,EXPIRED,2522413,"$22,500",LAND,Residential Lot,8344 Bucksport Heights Circle,Conway,29527,25B Conway Area--between Wacc. River & 701 / includes Bucksport,,,,
+expired,EXPIRED,2529141,"$48,000",LAND,Manufactured Lot,000 Wintercreeper Dr.,Longs,29568,09A Conway to Longs Area--Between Rt. 90 & Waccamaw River,,,,
+expired,EXPIRED,2524115,"$60,000",LAND,Residential Lot,Lot 1 Juniper Bay Rd.,Conway,29527,20A Conway Area--West edge of Conway between 501 & 378,,,,
+expired,EXPIRED,2524118,"$60,000",LAND,Residential Lot,Lot 2 Juniper Bay Rd.,Conway,29527,20A Conway Area--West edge of Conway between 501 & 378,,,,
+expired,EXPIRED,2524119,"$60,000",LAND,Residential Lot,Lot 3 Juniper Bay Rd.,Conway,29527,20A Conway Area--West edge of Conway between 501 & 378,,,,
+expired,EXPIRED,2524556,"$65,000",LAND,Manufactured Lot,TBD Highway 410,Loris,29569,01A Loris Area--West of Loris & North of HWY 9,,,,
+expired,EXPIRED,2526363,"$69,900",LAND,Residential Lot,4478 Barcelona Ln.,Little River,29566,04B Little River Area--North of Hwy 9,,,,
+expired,EXPIRED,2522119,"$70,000",LAND,Residential Lot,3817 Woodlawn Dr.,Loris,29569,08A Loris to Conway Area--South of Loris above Rt 22,,,,
+expired,EXPIRED,2523692,"$99,500",LAND,Acreage,1095 Cedar Branch Rd.,Loris,29569,07A Loris to Longs Area--South of 9 between Loris & Longs,,,,
+expired,EXPIRED,2501118,"$104,900",LAND,Residential Lot,2108 Lees Landing Circle,Conway,29526,15A Conway Area--East edge of Conway south of Old Reaves Ferry Rd.,,,,
+expired,EXPIRED,2524515,"$115,000",LAND,Residential Lot,TBD West Bear Grass Rd.,Longs,29568,03A Longs to Little River Area--North of 9 between Waccamaw River & Rt. 57,,,,
+expired,EXPIRED,2523085,"$119,500",CONDO/TOWNHOUSE,Condo,4243 Villas Dr.,Little River,29566,04B Little River Area--North of Hwy 9,1,1,0,$159
+expired,EXPIRED,2522290,"$124,999",CONDO/TOWNHOUSE,Condo,2001 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$902
+expired,EXPIRED,2522500,"$129,900",CONDO/TOWNHOUSE,Condo,201 74th Ave. N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,Efficiency,1,0,$789
+expired,EXPIRED,2522501,"$129,900",CONDO/TOWNHOUSE,Condo,201 74th Ave. N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,Efficiency,1,0,$789
+expired,EXPIRED,2521339,"$134,500",CONDO/TOWNHOUSE,Condo,6804 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,$938
+expired,EXPIRED,2600412,"$134,900",CONDO/TOWNHOUSE,Condo,1501 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$951
+expired,EXPIRED,2527279,"$135,000",CONDO/TOWNHOUSE,Condo,2001 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$902
+expired,EXPIRED,2520722,"$136,400",CONDO/TOWNHOUSE,Condo,1850 Colony Dr.,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,1,1,0,$324
+expired,EXPIRED,2522237,"$137,750",CONDO/TOWNHOUSE,Condo,1095 West Plantation Dr.,Little River,29566,04B Little River Area--North of Hwy 9,1,2,0,$346
+expired,EXPIRED,2523563,"$137,900",CONDO/TOWNHOUSE,Condo,201 74th Ave. N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,Efficiency,1,0,$798
+expired,EXPIRED,2518424,"$139,000",RESIDENTIAL,Manufactured Leased Land,911 Old Magnolia Dr.,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,4,2,0,$0
+expired,EXPIRED,2523842,"$139,900",CONDO/TOWNHOUSE,Condo,1501 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,1,"$1,135"
+expired,EXPIRED,2521620,"$143,900",CONDO/TOWNHOUSE,Condo,7500 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,1,$370
+expired,EXPIRED,2526571,"$149,900",CONDO/TOWNHOUSE,Condo,2001 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$902
+expired,EXPIRED,2528018,"$149,900",CONDO/TOWNHOUSE,Condo,4173 Hibiscus Dr.,Little River,29566,04B Little River Area--North of Hwy 9,1,1,1,$507
+expired,EXPIRED,2511713,"$155,500",CONDO/TOWNHOUSE,Condo,1100 Possum Trot Rd.,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,1,1,1,$515
+expired,EXPIRED,2521895,"$165,000",CONDO/TOWNHOUSE,Condo,4420 East Port Blvd.,Little River,29566,04B Little River Area--North of Hwy 9,2,2,0,$436
+expired,EXPIRED,2524181,"$169,000",RESIDENTIAL,Manufactured Leased Land,3173 Moon Shadow Ln.,Murrells Inlet,29576,28C Garden City Extension to merging of 17 Business & Bypass,2,2,0,$0
+expired,EXPIRED,2603170,"$169,900",RESIDENTIAL,Manufactured Leased Land,2705 Capricorn Dr.,Myrtle Beach,29575,16J Myrtle Beach Area--includes Prestwick & Lakewood,3,2,0,$0
+expired,EXPIRED,2521567,"$175,000",CONDO/TOWNHOUSE,Condo,1105 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,"$1,327"
+expired,EXPIRED,2509439,"$178,899",CONDO/TOWNHOUSE,Condo,7200 N Ocean Blvd.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,$748
+expired,EXPIRED,2522653,"$185,000",CONDO/TOWNHOUSE,Condo,613 Waterway Village Blvd,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,2,2,0,$408
+expired,EXPIRED,2523705,"$185,000",CONDO/TOWNHOUSE,Condo,6000 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,2,2,0,"$1,456"
+expired,EXPIRED,2522994,"$189,000",CONDO/TOWNHOUSE,Condo,6900 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,$898
+expired,EXPIRED,2525595,"$192,999",CONDO/TOWNHOUSE,Condo,6900 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,Efficiency,1,0,$674
+expired,EXPIRED,2523637,"$199,900",CONDO/TOWNHOUSE,Condo,149 Ella Kinley Circle,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,1,1,0,$317
+expired,EXPIRED,2528513,"$199,900",CONDO/TOWNHOUSE,Condo,5038 Belleglen Ct.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,0,$466
+expired,EXPIRED,2521291,"$200,000",CONDO/TOWNHOUSE,Condo,4800 Ocean Blvd. S,North Myrtle Beach,29582,11E North Myrtle Beach Area--Windy Hill,1,1,0,$781
+expired,EXPIRED,2509672,"$204,900",CONDO/TOWNHOUSE,Condo,4416 Eastport Blvd.,Little River,29566,04B Little River Area--North of Hwy 9,2,2,0,$505
+expired,EXPIRED,2600148,"$207,900",CONDO/TOWNHOUSE,Townhouse,405 S 13th Ave.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,2,1,1,$202
+expired,EXPIRED,2600012,"$208,000",CONDO/TOWNHOUSE,Condo,5523 North Ocean Blvd.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,"$1,011"
+expired,EXPIRED,2522281,"$214,999",RESIDENTIAL,Manufactured with Land,1011 Weslin Creek Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,4,2,0,$19
+expired,EXPIRED,2523531,"$215,000",CONDO/TOWNHOUSE,Condo,215 Atlantic Ave.,Garden City Beach,29576,27A Garden City Mainland & Pennisula,2,1,0,$624
+expired,EXPIRED,2605485,"$219,900",RESIDENTIAL,Detached,813 Benchmade Rd.,Conway,29527,21A Conway central between 501 & 701 / north of 501,3,2,0,$27
+expired,EXPIRED,2526393,"$229,500",CONDO/TOWNHOUSE,Townhouse,1212 Blueback Herring Way,Conway,29526,21A Conway central between 501 & 701 / north of 501,3,3,0,$170
+expired,EXPIRED,2524159,"$238,000",CONDO/TOWNHOUSE,Condo,2181 Clearwater Dr.,Surfside Beach,29575,28B Surfside Area-Glensbay to GC Connector,3,2,0,$448
+expired,EXPIRED,2523413,"$239,900",RESIDENTIAL,Detached,2452 Summerhaven Loop,Conway,29527,20A Conway Area--West edge of Conway between 501 & 378,3,2,0,$45
+expired,EXPIRED,2604002,"$248,900",RESIDENTIAL,Detached,884 Freestyle Ct.,Longs,29568,07A Loris to Longs Area--South of 9 between Loris & Longs,3,2,0,$63
+expired,EXPIRED,2523175,"$249,900",RESIDENTIAL,Semi-Detached,4233 Rivergate Ln.,Little River,29566,04B Little River Area--North of Hwy 9,2,2,0,$312
+expired,EXPIRED,2522756,"$250,000",LAND,Acreage,TBD Fries Bay Rd.,Loris,29569,03B Loris to Longs Area--North of 9 between Loris & Longs,,,,
+expired,EXPIRED,2324395,"$255,000",CONDO/TOWNHOUSE,Condo,6305 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,2,1,1,$584
+expired,EXPIRED,2512250,"$259,900",RESIDENTIAL,Manufactured Leased Land,6001 - 1805 S Kings Hwy.,Myrtle Beach,29575,16J Myrtle Beach Area--includes Prestwick & Lakewood,2,1,0,$0
+expired,EXPIRED,2522593,"$264,900",CONDO/TOWNHOUSE,Condo,106 Birch N Coppice Dr.,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,3,2,0,$423
+expired,EXPIRED,2600095,"$267,000",CONDO/TOWNHOUSE,Condo,214 Maison Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,2,2,0,$595
+expired,EXPIRED,2528511,"$269,000",CONDO/TOWNHOUSE,Condo,2805 N Ocean Blvd.,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,2,2,0,$430
+expired,EXPIRED,2417325,"$269,500",CONDO/TOWNHOUSE,Condo,201 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$949
+expired,EXPIRED,2504404,"$273,500",RESIDENTIAL,Detached,9514 Leeds Circle,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,2,2,0,$75
+expired,EXPIRED,2509264,"$274,990",RESIDENTIAL,Detached,1106 Cherrystone Loop,Conway,29526,08A Loris to Conway Area--South of Loris above Rt 22,3,2,0,$34
+expired,EXPIRED,2522810,"$276,000",CONDO/TOWNHOUSE,Condo,156 Machrie Loop,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,2,1,$449
+expired,EXPIRED,2529587,"$279,900",CONDO/TOWNHOUSE,Condo,172 Ella Kinley Circle,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,2,0,$408
+expired,EXPIRED,2600961,"$279,900",CONDO/TOWNHOUSE,Condo,180 Rothbury Circle,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,2,2,0,"$1,030"
+expired,EXPIRED,2523066,"$289,000",CONDO/TOWNHOUSE,Condo,4812 Magnolia Lake Dr.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,3,2,0,$428
+expired,EXPIRED,2529733,"$295,000",CONDO/TOWNHOUSE,Condo,147 Stonewall Circle,Longs,29568,03B Loris to Longs Area--North of 9 between Loris & Longs,3,2,0,$598
+expired,EXPIRED,2529142,"$299,000",RESIDENTIAL,Detached,618 Wintercreeper Dr.,Longs,29568,09A Conway to Longs Area--Between Rt. 90 & Waccamaw River,3,2,0,$63
+expired,EXPIRED,2515817,"$309,000",RESIDENTIAL,Manufactured Leased Land,469 Sandpebble Dr.,Surfside Beach,29575,27A Garden City Mainland & Pennisula,3,2,0,$376
+expired,EXPIRED,2523729,"$310,000",RESIDENTIAL,Detached,115 Hickory Dr.,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,3,2,0,$95
+expired,EXPIRED,2523295,"$314,999",RESIDENTIAL,Detached,1704 Sherwood Dr.,Conway,29526,21C Conway central between Long Ave & 905 / north of 501,3,2,0,$0
+expired,EXPIRED,2522621,"$317,950",CONDO/TOWNHOUSE,Condo,4895 Luster Leaf Circle,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,3,2,0,$428
+expired,EXPIRED,2522972,"$319,000",RESIDENTIAL,Detached,2653 Monaca Dr.,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,0,$80
+expired,EXPIRED,2525219,"$319,900",RESIDENTIAL,Detached,281 Sugar Mill Loop,Myrtle Beach,29588,24A Myrtle Beach Area--south of 501 between West Ferry & Burcale,4,2,1,$80
+expired,EXPIRED,2518383,"$324,990",RESIDENTIAL,Detached,997 Cherrystone Loop,Conway,29526,08A Loris to Conway Area--South of Loris above Rt 22,4,3,0,$34
+expired,EXPIRED,2521551,"$337,900",RESIDENTIAL,Detached,3068 Sweetpine Ln.,Conway,29527,21E Conway central--East edge of Conway / north & south of 501,3,2,0,$0
+expired,EXPIRED,2517087,"$339,000",RESIDENTIAL,Manufactured Leased Land,465 Sandpebble Dr.,Surfside Beach,29575,27A Garden City Mainland & Pennisula,2,2,0,$376
+expired,EXPIRED,2518072,"$345,000",RESIDENTIAL,Detached,809 Marlin Ct.,Murrells Inlet,29576,27A Garden City Mainland & Pennisula,3,2,0,$48
+expired,EXPIRED,2523004,"$355,000",RESIDENTIAL,Detached,7420 Springside Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,4,2,0,$0
+expired,EXPIRED,2527922,"$359,900",CONDO/TOWNHOUSE,Condo,2405 S Ocean Blvd.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,2,2,0,$434
+expired,EXPIRED,2602581,"$359,900",CONDO/TOWNHOUSE,Condo,1011 S Ocean Blvd.,Surfside Beach,29575,29B Surfside Beach--East of 17 and south of Surfside Drive,2,2,0,$817
+expired,EXPIRED,2519778,"$369,000",RESIDENTIAL,Detached,380 Emery Oak Dr.,Murrells Inlet,29576,27B Murrells Inlet - Horry County,4,2,1,$101
+expired,EXPIRED,2523777,"$369,900",CONDO/TOWNHOUSE,Condo,340 N Waccamaw Dr.,Murrells Inlet,29576,27A Garden City Mainland & Pennisula,2,2,0,$500
+expired,EXPIRED,2524010,"$374,900",CONDO/TOWNHOUSE,Condo,9820 Queensway Blvd.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,2,2,0,"$1,063"
+expired,EXPIRED,2508518,"$384,999",CONDO/TOWNHOUSE,Condo,9540 Shore Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,2,2,0,$350
+expired,EXPIRED,2524846,"$389,000",RESIDENTIAL,Detached,515 Meadowgrass Ct.,Myrtle Beach,29579,26B Myrtle Beach Area--north of Bay Rd between Wacc. River & 707,5,3,1,$60
+expired,EXPIRED,2604431,"$397,900",RESIDENTIAL,Detached,508 61st Ave. N,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,3,2,0,$0
+expired,EXPIRED,2521938,"$399,900",CONDO/TOWNHOUSE,Condo,5507 N Ocean Blvd.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,0,$608
+expired,EXPIRED,2526570,"$425,000",CONDO/TOWNHOUSE,Condo,2711 S Ocean Blvd.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,2,2,0,"$1,009"
+expired,EXPIRED,2507050,"$430,000",CONDO/TOWNHOUSE,Condo,107 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,2,2,0,"$1,372"
+expired,EXPIRED,2524554,"$450,000",RESIDENTIAL,Detached,4605 Hickory Holt Rd.,Galivants Ferry,29544,12A Aynor Area--North of Aynor below Hwy 917,3,4,1,$0
+expired,EXPIRED,2523959,"$465,000",RESIDENTIAL,Detached,104 Kettering Way,Little River,29566,04A Little River Area--South of Hwy 9,4,3,0,$40
+expired,EXPIRED,2526364,"$465,000",CONDO/TOWNHOUSE,Condo,4440 Nassau Ct.,Little River,29566,04B Little River Area--North of Hwy 9,3,3,0,$880
+expired,EXPIRED,2524442,"$485,000",RESIDENTIAL,Detached,416 Seneca River Rd.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,4,3,0,$34
+expired,EXPIRED,2520218,"$495,000",LAND,Acreage,TBD Grainloyd Rd.,Galivants Ferry,29544,17A Aynor Area--central includes city of Aynor,,,,
+expired,EXPIRED,2603147,"$499,999",RESIDENTIAL,Detached,418 Cabo Loop,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,4,2,1,$97
+expired,EXPIRED,2528438,"$519,500",CONDO/TOWNHOUSE,Condo,6108 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,3,0,$907
+expired,EXPIRED,2524595,"$549,000",RESIDENTIAL,Detached,915 Saluda River Rd.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,5,3,1,$54
+expired,EXPIRED,2407184,"$550,000",LAND,Acreage,TBD 4.48 acres Highway 501,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,,,,
+expired,EXPIRED,2508171,"$559,900",CONDO/TOWNHOUSE,Condo,2013 S Ocean Blvd.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,3,2,0,$659
+expired,EXPIRED,2523784,"$599,000",RESIDENTIAL,Detached,411 36th Ave. N,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,4,2,0,$0
+expired,EXPIRED,2515208,"$600,000",RESIDENTIAL,Detached,2428 Park St.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,5,4,0,$0
+expired,EXPIRED,2515225,"$600,000",RESIDENTIAL,Detached,2426 Park St.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,5,4,0,$0
+expired,EXPIRED,2318920,"$675,000",LAND,Commercial Lot - Sale,- Highway 707,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,,,,
+expired,EXPIRED,2522958,"$675,000",RESIDENTIAL,Detached,9617 Sandpiper Ct.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,3,2,0,$201
+expired,EXPIRED,2524065,"$675,000",RESIDENTIAL,Detached,513 Hillside Dr. S,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,3,2,1,$0
+expired,EXPIRED,2428203,"$679,900",RESIDENTIAL,Detached,1017 Tarpon Pond Rd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,4,3,1,$107
+expired,EXPIRED,2422623,"$699,000",LAND,Commercial Lot - Sale,TBD Highway 319,Conway,29526,14A Conway Area--Northern edge of Conway South of Rt 22,,,,
+expired,EXPIRED,2524039,"$699,990",MULTI-FAMILY,Duplex,404 34th Ave. S,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,,,,
+expired,EXPIRED,2516537,"$700,000",RESIDENTIAL,Detached,1712 26th Ave. N,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$0
+expired,EXPIRED,2516539,"$700,000",RESIDENTIAL,Detached,1716 26th Ave. N,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$0
+expired,EXPIRED,2515660,"$740,000",RESIDENTIAL,Detached,1718 26th Ave. N,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$0
+expired,EXPIRED,2522886,"$769,000",MULTI-FAMILY,Triplex,413 30th Ave. N,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,,,,
+expired,EXPIRED,2523487,"$769,000",RESIDENTIAL,Detached,413 30th Ave. N,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,4,4,0,$0
+expired,EXPIRED,2523492,"$769,000",COMMERCIAL/INDUSTRIAL,Hospitality,413 30th Ave. N,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,,,,
+expired,EXPIRED,2523912,"$775,000",LAND,Commercial Lot - Sale,1377 Highway 501,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+expired,EXPIRED,2510116,"$799,000",LAND,Commercial Lot - Sale,341 N Highway 701,Loris,29569,02A Loris Area--central includes city of Loris,,,,
+expired,EXPIRED,2523006,"$850,000",RESIDENTIAL,Detached,914 Bluffview Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,3,0,$154
+expired,EXPIRED,2508170,"$895,000",LAND,Commercial Lot - Sale,2410 Highway 501,Conway,29526,18A Conway Area--North edge of Conway between 701 & 501,,,,
+expired,EXPIRED,2521370,"$899,900",RESIDENTIAL,Detached,115 Green Lake Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,5,4,1,$0
+expired,EXPIRED,2517624,"$999,900",RESIDENTIAL,Detached,684 Waterbridge Blvd.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,4,1,$150
+expired,EXPIRED,2522406,"$1,130,000",RESIDENTIAL,Detached,2131 Timmerman Rd.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,4,3,1,$170
+expired,EXPIRED,2523011,"$1,274,900",RESIDENTIAL,Detached,816 Waterton Ave.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,4,1,$105
+expired,EXPIRED,2521761,"$1,475,000",RESIDENTIAL,Detached,901 Clubhouse Dr.,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,3,3,0,$110
+expired,EXPIRED,2514507,"$1,700,000",RESIDENTIAL,Detached,337 St. Julian Ln.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,5,1,$148
+expired,EXPIRED,2522922,"$2,200,000",MULTI-FAMILY,Apartments,141 & 145 Colonial Circle,Murrells Inlet,29576,27B Murrells Inlet - Horry County,,,,
+expired,EXPIRED,2524683,"$2,400,000",RESIDENTIAL,Detached,527 Mount Gilead Rd.,Murrells Inlet,29576,27B Murrells Inlet - Horry County,6,4,0,$0
+expired,EXPIRED,2428771,"$2,499,900",LAND,Commercial Lot - Sale,TBD Highway 15,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+expired,EXPIRED,2508068,"$2,499,900",LAND,Multi-Family Lot,TBD Highway 15,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+expired,EXPIRED,2514734,"$3,999,900",COMMERCIAL/INDUSTRIAL,Hospitality,1900 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+withdrawn,WITHDRAWN,2607443,$0,RESIDENTIAL,Detached,313 Junco Circle,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,0,$75
+withdrawn,WITHDRAWN,2602405,$395,COMMERCIAL/INDUSTRIAL,Office,1297 Professional Dr.,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,,,,
+withdrawn,WITHDRAWN,2604063,$950,LAND,Boat Slip - Lease,4306 Lightkeepers Way,Little River,29566,04B Little River Area--North of Hwy 9,,,,
+withdrawn,WITHDRAWN,2528240,"$2,250",COMMERCIAL/INDUSTRIAL,Retail,3566 Northgate Blvd.,Myrtle Beach,29588,10B Myrtle Beach Area--Carolina Forest,,,,
+withdrawn,WITHDRAWN,2521586,"$2,573",COMMERCIAL/INDUSTRIAL,Industrial,240 Industrial Way,Myrtle Beach,29579,24B Myrtle Beach Area-- south of 501 between Burcale & waterway,,,,
+withdrawn,WITHDRAWN,2521585,"$2,573",COMMERCIAL/INDUSTRIAL,Industrial,240 Industrial Way,Myrtle Beach,29579,24B Myrtle Beach Area-- south of 501 between Burcale & waterway,,,,
+withdrawn,WITHDRAWN,2602937,"$3,100",COMMERCIAL/INDUSTRIAL,Business,1008 1st Ave. S,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,,,,
+withdrawn,WITHDRAWN,2528636,"$4,440",COMMERCIAL/INDUSTRIAL,Retail,4998 Carolina Forest Blvd.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,,,,
+withdrawn,WITHDRAWN,2518102,"$4,667",COMMERCIAL/INDUSTRIAL,Retail,TBD Oakheart Rd.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,,,,
+withdrawn,WITHDRAWN,2518103,"$4,667",COMMERCIAL/INDUSTRIAL,Retail,TBD Oakheart Rd.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,,,,
+withdrawn,WITHDRAWN,2528639,"$4,824",COMMERCIAL/INDUSTRIAL,Retail,4998 Carolina Forest Blvd.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,,,,
+withdrawn,WITHDRAWN,2505301,"$12,676",COMMERCIAL/INDUSTRIAL,Industrial,1410 17th Ave. S,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+withdrawn,WITHDRAWN,2517586,"$35,000",LAND,Residential Lot,7374 Hwy 9,Nichols,29581,01A Loris Area--West of Loris & North of HWY 9,,,,
+withdrawn,WITHDRAWN,2510877,"$49,900",LAND,Manufactured Lot,5600 Joyner Swamp Rd.,Galivants Ferry,29544,12A Aynor Area--North of Aynor below Hwy 917,,,,
+withdrawn,WITHDRAWN,2512495,"$60,000",RESIDENTIAL,Manufactured Leased Land,1056 Hunter Way,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,0,$0
+withdrawn,WITHDRAWN,2529441,"$67,500",CONDO/TOWNHOUSE,Condo,5905 S Kings Hwy.,Myrtle Beach,29577,16J Myrtle Beach Area--includes Prestwick & Lakewood,1,1,0,$913
+withdrawn,WITHDRAWN,2511378,"$72,500",CONDO/TOWNHOUSE,Condo,2207 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,Efficiency,1,0,$673
+withdrawn,WITHDRAWN,2426088,"$75,000",CONDO/TOWNHOUSE,Condo,1100 Possum Trot Rd.,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,Efficiency,1,0,$515
+withdrawn,WITHDRAWN,2523899,"$79,900",CONDO/TOWNHOUSE,Condo,6803 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,Efficiency,1,0,$952
+withdrawn,WITHDRAWN,2507464,"$80,000",LAND,Residential Lot,TBD Highway 308,Galivants Ferry,29544,13A Aynor Area--North of Rt 22 & West of 410,,,,
+withdrawn,WITHDRAWN,2507463,"$80,000",LAND,Residential Lot,TBD Highway 308,Galivants Ferry,29544,13A Aynor Area--North of Rt 22 & West of 410,,,,
+withdrawn,WITHDRAWN,2507461,"$80,000",LAND,Residential Lot,TBD Highway 308,Galivants Ferry,29544,13A Aynor Area--North of Rt 22 & West of 410,,,,
+withdrawn,WITHDRAWN,2507460,"$80,000",LAND,Residential Lot,TBD Highway 308,Galivants Ferry,29544,13A Aynor Area--North of Rt 22 & West of 410,,,,
+withdrawn,WITHDRAWN,2507457,"$80,000",LAND,Residential Lot,TBD Highway 308,Galivants Ferry,29544,13A Aynor Area--North of Rt 22 & West of 410,,,,
+withdrawn,WITHDRAWN,2517588,"$81,000",LAND,Residential Lot,TBD Vance Ln.,Nichols,29581,01A Loris Area--West of Loris & North of HWY 9,,,,
+withdrawn,WITHDRAWN,2517584,"$84,000",RESIDENTIAL,Detached,7330 Hwy 9,Nichols,29581,01A Loris Area--West of Loris & North of HWY 9,2,1,0,$0
+withdrawn,WITHDRAWN,2607776,"$90,000",LAND,Acreage,2647 Allen Dew Rd.,Conway,29527,22A Conway Area--Southwest side of Conway between 378 and 701,,,,
+withdrawn,WITHDRAWN,2520828,"$90,000",LAND,Residential Lot,3655 W Bear Grass Rd.,Loris,29569,03B Loris to Longs Area--North of 9 between Loris & Longs,,,,
+withdrawn,WITHDRAWN,2602693,"$99,950",CONDO/TOWNHOUSE,Condo,615 Carter Ln.,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,2,1,0,$300
+withdrawn,WITHDRAWN,2521581,"$110,000",CONDO/TOWNHOUSE,Condo,1501 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,Efficiency,1,0,$616
+withdrawn,WITHDRAWN,2515615,"$110,000",CONDO/TOWNHOUSE,Condo,500 Fairway Village Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,1,1,1,$336
+withdrawn,WITHDRAWN,2507915,"$114,550",CONDO/TOWNHOUSE,Condo,1105 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,"$1,327"
+withdrawn,WITHDRAWN,2512806,"$115,000",CONDO/TOWNHOUSE,Condo,411 Cambridge Circle,Murrells Inlet,29576,28C Garden City Extension to merging of 17 Business & Bypass,1,1,0,$185
+withdrawn,WITHDRAWN,2604155,"$119,000",CONDO/TOWNHOUSE,Garage,120 Staton Ln.,Longs,29568,03A Longs to Little River Area--North of 9 between Waccamaw River & Rt. 57,,,,
+withdrawn,WITHDRAWN,2511890,"$119,500",RESIDENTIAL,Manufactured Leased Land,1065 Palm Dr.,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,0,$0
+withdrawn,WITHDRAWN,2526372,"$119,921",CONDO/TOWNHOUSE,Condo,1881 Colony Dr.,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,1,1,0,$417
+withdrawn,WITHDRAWN,2519842,"$120,999",CONDO/TOWNHOUSE,Condo,6900 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,Efficiency,1,0,$636
+withdrawn,WITHDRAWN,2529954,"$123,000",CONDO/TOWNHOUSE,Condo,6804 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,$938
+withdrawn,WITHDRAWN,2522565,"$124,000",CONDO/TOWNHOUSE,Condo,2001 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$902
+withdrawn,WITHDRAWN,2600472,"$126,900",CONDO/TOWNHOUSE,Condo,2005 Greens Blvd.,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,2,2,0,$300
+withdrawn,WITHDRAWN,2523104,"$130,000",RESIDENTIAL,Manufactured with Land,1727 Mineral Springs Rd.,Conway,29527,22A Conway Area--Southwest side of Conway between 378 and 701,3,2,0,$0
+withdrawn,WITHDRAWN,2528948,"$130,000",CONDO/TOWNHOUSE,Condo,2310 N Ocean Blvd.,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,1,1,0,$850
+withdrawn,WITHDRAWN,2600043,"$134,000",CONDO/TOWNHOUSE,Condo,201 74th Ave. N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,Efficiency,1,0,$865
+withdrawn,WITHDRAWN,2606196,"$134,900",COMMERCIAL/INDUSTRIAL,Business,1717 Racepath Ave.,Conway,29527,21A Conway central between 501 & 701 / north of 501,,,,
+withdrawn,WITHDRAWN,2526177,"$139,000",LAND,Acreage,TBD Ole Maple St.,Loris,29569,06A Loris to Conway Area--South of Loris above Rt. 22,,,,
+withdrawn,WITHDRAWN,2512802,"$139,900",CONDO/TOWNHOUSE,Condo,411 Cambridge Circle,Murrells Inlet,29576,28C Garden City Extension to merging of 17 Business & Bypass,2,2,0,$380
+withdrawn,WITHDRAWN,2523644,"$139,900",CONDO/TOWNHOUSE,Condo,2001 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$902
+withdrawn,WITHDRAWN,2524232,"$139,989",RESIDENTIAL,Detached,5724 Norton Rd.,Green Sea,29545,01A Loris Area--West of Loris & North of HWY 9,3,1,0,$0
+withdrawn,WITHDRAWN,2601054,"$139,999",RESIDENTIAL,Detached,1717 Racepath Ave.,Conway,29527,21E Conway central--East edge of Conway / north & south of 501,1,1,0,$0
+withdrawn,WITHDRAWN,2524794,"$139,999",COMMERCIAL/INDUSTRIAL,Business,1717 Racepath Ave.,Conway,29527,21E Conway central--East edge of Conway / north & south of 501,,,,
+withdrawn,WITHDRAWN,2524024,"$140,000",CONDO/TOWNHOUSE,Condo,1105 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,"$1,327"
+withdrawn,WITHDRAWN,2601593,"$144,900",CONDO/TOWNHOUSE,Condo,4218 Pinehurst Circle,Little River,29566,04B Little River Area--North of Hwy 9,2,2,0,$484
+withdrawn,WITHDRAWN,2529635,"$146,000",CONDO/TOWNHOUSE,Condo,6703 Jefferson Pl.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,1,1,$503
+withdrawn,WITHDRAWN,2604878,"$149,900",RESIDENTIAL,Manufactured Leased Land,247 Air Stream Dr.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,3,2,0,$0
+withdrawn,WITHDRAWN,2316566,"$149,900",CONDO/TOWNHOUSE,Condo,200 Maison Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,1,1,0,$536
+withdrawn,WITHDRAWN,2603349,"$149,999",CONDO/TOWNHOUSE,Condo,421 Cambridge Circle,Murrells Inlet,29576,28C Garden City Extension to merging of 17 Business & Bypass,2,2,0,$395
+withdrawn,WITHDRAWN,2407717,"$150,000",CONDO/TOWNHOUSE,Condo,1200 N Ocean Blvd.,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,Efficiency,1,0,"$1,053"
+withdrawn,WITHDRAWN,2605745,"$150,000",RESIDENTIAL,Detached,1257 Park Hill Dr.,Conway,29526,21C Conway central between Long Ave & 905 / north of 501,3,1,0,$0
+withdrawn,WITHDRAWN,2605432,"$150,000",RESIDENTIAL,Detached,913 White St.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,4,2,0,$0
+withdrawn,WITHDRAWN,2601296,"$152,900",CONDO/TOWNHOUSE,Condo,3681 Clay Pond Village Ln.,Myrtle Beach,29579,24B Myrtle Beach Area-- south of 501 between Burcale & waterway,2,2,0,$370
+withdrawn,WITHDRAWN,2515809,"$153,333",CONDO/TOWNHOUSE,Condo,1101 2nd Ave. N,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,2,2,2,$255
+withdrawn,WITHDRAWN,2420556,"$154,000",CONDO/TOWNHOUSE,Condo,2401 Ocean Blvd. S,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,Efficiency,1,0,$694
+withdrawn,WITHDRAWN,2509284,"$154,900",CONDO/TOWNHOUSE,Condo,6900 N Ocean Blvd.,Myrtle Beach,29579,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,$872
+withdrawn,WITHDRAWN,2510108,"$155,000",LAND,Acreage,6.84 Acs Kates Bay Hwy.,Conway,29527,22A Conway Area--Southwest side of Conway between 378 and 701,,,,
+withdrawn,WITHDRAWN,2515830,"$157,500",CONDO/TOWNHOUSE,Condo,6702 Jefferson Pl.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,1,1,$347
+withdrawn,WITHDRAWN,2514750,"$158,000",CONDO/TOWNHOUSE,Condo,2498 Coastline Ct.,Murrells Inlet,29576,28B Surfside Area-Glensbay to GC Connector,2,2,0,$515
+withdrawn,WITHDRAWN,2600888,"$158,000",LAND,Residential Lot,TBD McDowell Shortcut Rd.,Murrells Inlet,29576,27B Murrells Inlet - Horry County,,,,
+withdrawn,WITHDRAWN,2528021,"$159,000",CONDO/TOWNHOUSE,Condo,1206 Tiffany Ln.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,2,2,0,$365
+withdrawn,WITHDRAWN,2601015,"$159,900",CONDO/TOWNHOUSE,Condo,3015 Old Bryan Dr.,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,2,2,0,$450
+withdrawn,WITHDRAWN,2530058,"$160,000",RESIDENTIAL,Manufactured with Land,117 Ranchette Circle,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,3,2,0,$7
+withdrawn,WITHDRAWN,2523361,"$164,999",CONDO/TOWNHOUSE,Condo,4860 Carnation Circle,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,1,$225
+withdrawn,WITHDRAWN,2603962,"$170,000",CONDO/TOWNHOUSE,Condo,201 Landing Rd.,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,1,1,0,$333
+withdrawn,WITHDRAWN,2601496,"$170,000",CONDO/TOWNHOUSE,Condo,6000 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,2,2,0,"$1,318"
+withdrawn,WITHDRAWN,2517919,"$174,000",CONDO/TOWNHOUSE,Condo,2401 Ocean Blvd. S,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$930
+withdrawn,WITHDRAWN,2604603,"$174,900",CONDO/TOWNHOUSE,Condo,102 Scotch Broom Dr.,Little River,29566,04B Little River Area--North of Hwy 9,2,2,0,$306
+withdrawn,WITHDRAWN,2515049,"$175,000",CONDO/TOWNHOUSE,Condo,5050 Windsor Green Way,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,0,$639
+withdrawn,WITHDRAWN,2522349,"$179,900",CONDO/TOWNHOUSE,Condo,214 Maison Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,1,1,0,$536
+withdrawn,WITHDRAWN,2521558,"$179,900",LAND,Residential Lot,1310 Mariners Rest Dr.,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,,,,
+withdrawn,WITHDRAWN,2525092,"$179,950",CONDO/TOWNHOUSE,Condo,3700 Golf Colony Lane,Little River,29566,04B Little River Area--North of Hwy 9,1,2,0,$345
+withdrawn,WITHDRAWN,2602929,"$180,000",CONDO/TOWNHOUSE,Condo,120 Fountain Pointe Ln.,Myrtle Beach,29579,24B Myrtle Beach Area-- south of 501 between Burcale & waterway,3,2,0,$250
+withdrawn,WITHDRAWN,2527585,"$182,500",LAND,Residential Lot,1103 East Isle of Palms Ave.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,,,,
+withdrawn,WITHDRAWN,2519770,"$189,000",RESIDENTIAL,Manufactured with Land,3025 Shalimar Dr.,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,2,2,0,$0
+withdrawn,WITHDRAWN,2508711,"$189,000",CONDO/TOWNHOUSE,Condo,120 N Dogwood Dr. N,Murrells Inlet,29576,27A Garden City Mainland & Pennisula,1,1,0,$400
+withdrawn,WITHDRAWN,2401023,"$189,000",RESIDENTIAL,Manufactured Leased Land,2700 Capricorn Dr.,Myrtle Beach,29575,16J Myrtle Beach Area--includes Prestwick & Lakewood,3,2,0,$0
+withdrawn,WITHDRAWN,2428816,"$189,500",CONDO/TOWNHOUSE,Condo,1105 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,"$1,483"
+withdrawn,WITHDRAWN,2506580,"$189,900",CONDO/TOWNHOUSE,Condo,901 West Port Dr.,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,2,2,0,$420
+withdrawn,WITHDRAWN,2525345,"$189,999",CONDO/TOWNHOUSE,Condo,6001 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,2,2,0,"$1,456"
+withdrawn,WITHDRAWN,2605663,"$190,000",RESIDENTIAL,Detached,1742 John St.,Conway,29527,21E Conway central--East edge of Conway / north & south of 501,3,2,0,$0
+withdrawn,WITHDRAWN,2529832,"$190,000",CONDO/TOWNHOUSE,Condo,2258 Huntingdon Dr.,Surfside Beach,29575,28B Surfside Area-Glensbay to GC Connector,3,2,0,$416
+withdrawn,WITHDRAWN,2514331,"$193,900",CONDO/TOWNHOUSE,Condo,4687 Wild Iris Dr.,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,2,2,0,$509
+withdrawn,WITHDRAWN,2529269,"$194,500",CONDO/TOWNHOUSE,Condo,111 Fountain Pointe Ln.,Myrtle Beach,29579,24B Myrtle Beach Area-- south of 501 between Burcale & waterway,3,2,0,$250
+withdrawn,WITHDRAWN,2601062,"$194,900",CONDO/TOWNHOUSE,Condo,415 Ocean Creek Dr.,Myrtle Beach,29572,16A Myrtle Beach Area--Briarcliffe,1,1,1,$787
+withdrawn,WITHDRAWN,2602115,"$195,000",CONDO/TOWNHOUSE,Condo,6804 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,$993
+withdrawn,WITHDRAWN,2522806,"$197,900",RESIDENTIAL,Manufactured Leased Land,3231 Pecan Trail,Murrells Inlet,29576,28C Garden City Extension to merging of 17 Business & Bypass,2,2,0,$0
+withdrawn,WITHDRAWN,2529542,"$198,000",CONDO/TOWNHOUSE,Condo,1278 River Oak Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,0,$424
+withdrawn,WITHDRAWN,2606616,"$199,000",RESIDENTIAL,Detached,6590 Eagle Creek Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,2,2,0,$95
+withdrawn,WITHDRAWN,2507470,"$199,500",LAND,Residential Lot,TBD Highway 308,Galivants Ferry,29544,13A Aynor Area--North of Rt 22 & West of 410,,,,
+withdrawn,WITHDRAWN,2507467,"$199,500",LAND,Residential Lot,TBD Highway 308,Galivants Ferry,29544,13A Aynor Area--North of Rt 22 & West of 410,,,,
+withdrawn,WITHDRAWN,2601667,"$199,500",CONDO/TOWNHOUSE,Townhouse,1210 Pinegrove Dr.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,2,1,1,$150
+withdrawn,WITHDRAWN,2604597,"$199,900",RESIDENTIAL,Manufactured with Land,126 Oak Log Lake Rd.,Conway,29526,21C Conway central between Long Ave & 905 / north of 501,3,2,0,$0
+withdrawn,WITHDRAWN,2601321,"$199,900",CONDO/TOWNHOUSE,Condo,5523 N Ocean Blvd.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,"$1,011"
+withdrawn,WITHDRAWN,2526804,"$199,900",CONDO/TOWNHOUSE,Condo,503 Pinewood Rd.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,1,1,$100
+withdrawn,WITHDRAWN,2603140,"$199,990",CONDO/TOWNHOUSE,Condo,2226 Clearwater Dr.,Surfside Beach,29575,28B Surfside Area-Glensbay to GC Connector,3,2,0,$448
+withdrawn,WITHDRAWN,2604164,"$200,000",CONDO/TOWNHOUSE,Condo,1304 N Ocean Blvd.,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,2,2,0,"$1,379"
+withdrawn,WITHDRAWN,2515183,"$204,500",CONDO/TOWNHOUSE,Townhouse,951 Plantation Dr.,Little River,29566,04B Little River Area--North of Hwy 9,2,2,1,$165
+withdrawn,WITHDRAWN,2525904,"$204,900",RESIDENTIAL,Manufactured Leased Land,61 Saxon Ct.,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,3,2,0,$0
+withdrawn,WITHDRAWN,2601723,"$207,000",CONDO/TOWNHOUSE,Condo,116 Olde Towne Way,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,3,2,1,$435
+withdrawn,WITHDRAWN,2603728,"$208,000",CONDO/TOWNHOUSE,Condo,106 Butkus Dr.,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,3,2,0,$475
+withdrawn,WITHDRAWN,2519854,"$210,000",RESIDENTIAL,Manufactured with Land,3824 Wayside Rd.,Conway,29527,20A Conway Area--West edge of Conway between 501 & 378,3,2,0,$0
+withdrawn,WITHDRAWN,2528148,"$210,500",CONDO/TOWNHOUSE,Townhouse,564 Uniola Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,2,2,1,$360
+withdrawn,WITHDRAWN,2601147,"$219,844",CONDO/TOWNHOUSE,Townhouse,1037 Stanton Pl.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,2,2,1,$432
+withdrawn,WITHDRAWN,2522369,"$220,000",RESIDENTIAL,Manufactured with Land,1073 Hyatt Ave.,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,2,2,0,$0
+withdrawn,WITHDRAWN,2426926,"$223,500",CONDO/TOWNHOUSE,Condo,201 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,1,1,0,$775
+withdrawn,WITHDRAWN,2525804,"$224,000",RESIDENTIAL,Detached,1011 Tin Top Alley,Conway,29527,21D Conway central between 501& 9th Ave / south of 501,3,2,0,$0
+withdrawn,WITHDRAWN,2525803,"$224,000",RESIDENTIAL,Detached,1009 Tin Top Alley,Conway,29527,21D Conway central between 501& 9th Ave / south of 501,3,2,0,$0
+withdrawn,WITHDRAWN,2606299,"$224,899",CONDO/TOWNHOUSE,Townhouse,2720 Mercer Dr.,Conway,29526,21C Conway central between Long Ave & 905 / north of 501,3,2,1,$374
+withdrawn,WITHDRAWN,2601138,"$224,900",CONDO/TOWNHOUSE,Condo,2701 S Ocean Blvd.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,1,1,0,$578
+withdrawn,WITHDRAWN,2523417,"$224,900",CONDO/TOWNHOUSE,Condo,1242 River Oaks Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,2,2,0,$410
+withdrawn,WITHDRAWN,2603217,"$225,000",CONDO/TOWNHOUSE,Condo,415 Ocean Creek Dr.,Myrtle Beach,29572,16A Myrtle Beach Area--Briarcliffe,1,1,1,$642
+withdrawn,WITHDRAWN,2528353,"$225,000",CONDO/TOWNHOUSE,Condo,508 Colonial Trace Dr.,Longs,29568,03A Longs to Little River Area--North of 9 between Waccamaw River & Rt. 57,3,2,0,$531
+withdrawn,WITHDRAWN,2522056,"$229,000",CONDO/TOWNHOUSE,Condo,5308 N Ocean Blvd.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,$440
+withdrawn,WITHDRAWN,2600806,"$229,500",RESIDENTIAL,Manufactured with Land,8122 Shady Grove Rd.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,2,0,$35
+withdrawn,WITHDRAWN,2529365,"$229,900",CONDO/TOWNHOUSE,Condo,4691 Wild Iris Dr.,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,2,2,0,$509
+withdrawn,WITHDRAWN,2517678,"$233,000",RESIDENTIAL,Manufactured with Land,8627 Bragg Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,2,0,$17
+withdrawn,WITHDRAWN,2523452,"$234,000",CONDO/TOWNHOUSE,Condo,601 Mitchell Dr.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,2,2,0,$576
+withdrawn,WITHDRAWN,2606117,"$235,000",RESIDENTIAL,Semi-Detached,816 Wilshire Ln.,Murrells Inlet,29576,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,2,2,1,$450
+withdrawn,WITHDRAWN,2603787,"$235,000",RESIDENTIAL,Manufactured with Land,726 Oliver Dr.,Murrells Inlet,29576,28B Surfside Area-Glensbay to GC Connector,3,2,0,$13
+withdrawn,WITHDRAWN,2601098,"$235,777",CONDO/TOWNHOUSE,Condo,2711 S Ocean Blvd.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,1,1,0,$578
+withdrawn,WITHDRAWN,2602738,"$235,900",CONDO/TOWNHOUSE,Condo,822 Sail Ln.,Murrells Inlet,29576,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,2,0,$417
+withdrawn,WITHDRAWN,2524908,"$237,990",CONDO/TOWNHOUSE,Townhouse,385 Myrtle Meadows Dr,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,3,2,1,$161
+withdrawn,WITHDRAWN,2528984,"$239,900",CONDO/TOWNHOUSE,Townhouse,1241 Shoebridge Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,2,2,1,$360
+withdrawn,WITHDRAWN,2529812,"$240,000",CONDO/TOWNHOUSE,Townhouse,500 Eagle Way,Little River,29566,04B Little River Area--North of Hwy 9,3,3,0,$469
+withdrawn,WITHDRAWN,2527188,"$244,900",RESIDENTIAL,Detached Leased Land,3012 Thoroughfare Ct,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,3,2,0,$0
+withdrawn,WITHDRAWN,2605959,"$244,900",CONDO/TOWNHOUSE,Condo,619 Woodmoor Dr.,Murrells Inlet,29576,28C Garden City Extension to merging of 17 Business & Bypass,3,2,0,$424
+withdrawn,WITHDRAWN,2528165,"$249,000",CONDO/TOWNHOUSE,Condo,512 35th Ave. N,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,3,2,0,$320
+withdrawn,WITHDRAWN,2526469,"$249,800",CONDO/TOWNHOUSE,Condo,4648 Fringetree Dr.,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,3,2,0,$563
+withdrawn,WITHDRAWN,2524297,"$249,950",RESIDENTIAL,Detached,2610 Temperance Dr.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,3,2,0,$30
+withdrawn,WITHDRAWN,2525236,"$251,900",RESIDENTIAL,Manufactured with Land,212 Captains Dr.,Little River,29566,04B Little River Area--North of Hwy 9,3,2,0,$30
+withdrawn,WITHDRAWN,2529127,"$252,500",RESIDENTIAL,Manufactured with Land,3670 Pecan St.,Little River,29566,03A Longs to Little River Area--North of 9 between Waccamaw River & Rt. 57,3,2,0,$0
+withdrawn,WITHDRAWN,2523615,"$254,900",CONDO/TOWNHOUSE,Condo,90 Ella Kinley Circle,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,2,2,0,$348
+withdrawn,WITHDRAWN,2526918,"$255,000",CONDO/TOWNHOUSE,Condo,4840 Moss Creek Loop,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,3,2,1,$732
+withdrawn,WITHDRAWN,2521624,"$255,000",RESIDENTIAL,Detached,232 Oak Lea Dr.,Conway,29526,15B Conway Area--East edge of Conway north of Old Reaves Ferry Rd.,3,2,0,$0
+withdrawn,WITHDRAWN,2419509,"$255,000",CONDO/TOWNHOUSE,Condo,6001 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,2,2,0,"$1,318"
+withdrawn,WITHDRAWN,2523908,"$259,900",CONDO/TOWNHOUSE,Condo,627 Bonaventure Dr.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,3,2,0,$419
+withdrawn,WITHDRAWN,2523197,"$259,900",RESIDENTIAL,Manufactured with Land,1062 Weslin Creek Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,4,2,0,$17
+withdrawn,WITHDRAWN,2510975,"$259,900",CONDO/TOWNHOUSE,Condo,6001 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,2,2,0,"$1,318"
+withdrawn,WITHDRAWN,2514278,"$261,999",CONDO/TOWNHOUSE,Condo,201 76th Ave. N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,0,$975
+withdrawn,WITHDRAWN,2522575,"$262,500",CONDO/TOWNHOUSE,Condo,4895 Luster Leaf Circle,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,0,$340
+withdrawn,WITHDRAWN,2607256,"$263,990",RESIDENTIAL,Detached,508 Silver Pidgeon St,Aynor,29511,13A Aynor Area--North of Rt 22 & West of 410,3,2,0,$62
+withdrawn,WITHDRAWN,2603849,"$265,000",RESIDENTIAL,Detached,737 Weston Dr.,Conway,29526,18A Conway Area--North edge of Conway between 701 & 501,3,2,0,$33
+withdrawn,WITHDRAWN,2529425,"$269,000",LAND,Acreage,TBD Winburn St.,Conway,29526,23B Conway Area-South of Conway between 701 & Wacc. River,,,,
+withdrawn,WITHDRAWN,2527898,"$269,800",RESIDENTIAL,Detached,187 Heath Dr.,Longs,29568,07A Loris to Longs Area--South of 9 between Loris & Longs,3,2,0,$20
+withdrawn,WITHDRAWN,2526706,"$269,900",RESIDENTIAL,Detached,205 Birkdale Ln.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,2,2,0,$97
+withdrawn,WITHDRAWN,2607119,"$269,999",RESIDENTIAL,Detached,588 Harrison Mill St.,Myrtle Beach,29579,24A Myrtle Beach Area--south of 501 between West Ferry & Burcale,3,3,0,$226
+withdrawn,WITHDRAWN,2522724,"$274,000",RESIDENTIAL,Detached,1103 Tibetan St.,Conway,29526,09A Conway to Longs Area--Between Rt. 90 & Waccamaw River,3,2,0,$75
+withdrawn,WITHDRAWN,2524314,"$275,000",RESIDENTIAL,Detached,186 Carolina Crossing Blvd.,Little River,29566,04B Little River Area--North of Hwy 9,2,2,0,$164
+withdrawn,WITHDRAWN,2607319,"$275,000",RESIDENTIAL,Detached with HPR,608 Montenegro Way,Myrtle Beach,29579,24A Myrtle Beach Area--south of 501 between West Ferry & Burcale,3,2,1,$250
+withdrawn,WITHDRAWN,2529604,"$275,000",RESIDENTIAL,Manufactured with Land,4189 Still Pond Rd.,Conway,29526,21A Conway central between 501 & 701 / north of 501,3,2,0,$0
+withdrawn,WITHDRAWN,2516240,"$275,000",CONDO/TOWNHOUSE,Condo,400 20th Ave. N,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,2,2,0,$810
+withdrawn,WITHDRAWN,2606085,"$275,990",RESIDENTIAL,Detached,500 Silver Pidgeon St,Aynor,29511,13A Aynor Area--North of Rt 22 & West of 410,3,2,0,$62
+withdrawn,WITHDRAWN,2511039,"$278,000",CONDO/TOWNHOUSE,Condo,1025 World Tour Blvd.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,3,0,$575
+withdrawn,WITHDRAWN,2603130,"$279,900",CONDO/TOWNHOUSE,Townhouse,3560 Alexandria Ave.,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,2,2,1,$426
+withdrawn,WITHDRAWN,2600301,"$279,900",RESIDENTIAL,Detached,1850 Bay Tree Ln.,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,4,3,0,$77
+withdrawn,WITHDRAWN,2518352,"$279,900",RESIDENTIAL,Detached,2812 Highway 378,Conway,29527,20A Conway Area--West edge of Conway between 501 & 378,3,2,0,$0
+withdrawn,WITHDRAWN,2502193,"$280,000",RESIDENTIAL,Detached with HPR,3525 Bristol Ln.,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,2,2,1,$240
+withdrawn,WITHDRAWN,2524429,"$284,000",CONDO/TOWNHOUSE,Condo,202 74th Ave. N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,0,"$1,244"
+withdrawn,WITHDRAWN,2602674,"$285,000",RESIDENTIAL,Detached,134 Kingston Bluff Dr.,Longs,29568,09B Conway to Longs Area--Between Rt. 905 & Waccamaw River,3,2,0,$65
+withdrawn,WITHDRAWN,2600401,"$285,000",RESIDENTIAL,Detached,4544 Spyglass Dr.,Little River,29566,04B Little River Area--North of Hwy 9,3,2,0,$116
+withdrawn,WITHDRAWN,2607738,"$285,990",RESIDENTIAL,Detached,504 Acosta Circle,Conway,29527,20A Conway Area--West edge of Conway between 501 & 378,3,2,0,$89
+withdrawn,WITHDRAWN,2527256,"$288,000",RESIDENTIAL,Detached,518 Sugar Pine Dr.,Conway,29526,18A Conway Area--North edge of Conway between 701 & 501,4,2,0,$66
+withdrawn,WITHDRAWN,2523765,"$289,900",RESIDENTIAL,Detached,3424 Logan St.,Conway,29526,21B Conway central between 701 & Long Ave / north of 501,3,2,0,$97
+withdrawn,WITHDRAWN,2529806,"$289,900",RESIDENTIAL,Detached,304 Silver Fox Trail,Myrtle Beach,29579,26B Myrtle Beach Area--north of Bay Rd between Wacc. River & 707,4,3,0,$0
+withdrawn,WITHDRAWN,2602903,"$289,900",RESIDENTIAL,Detached,9439 Old Palmetto Rd.,Murrells Inlet,29576,27B Murrells Inlet - Horry County,3,2,0,$119
+withdrawn,WITHDRAWN,2529205,"$294,900",CONDO/TOWNHOUSE,Condo,2501 S Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,2,2,0,"$1,437"
+withdrawn,WITHDRAWN,2527327,"$295,000",RESIDENTIAL,Detached,309 Flagstone Dr.,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,3,2,0,$0
+withdrawn,WITHDRAWN,2529381,"$299,000",CONDO/TOWNHOUSE,Townhouse,310 75th Ave N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,1,$79
+withdrawn,WITHDRAWN,2528764,"$299,000",RESIDENTIAL,Detached,2715 Biscane Ct.,Conway,29527,21D Conway central between 501& 9th Ave / south of 501,3,2,0,$11
+withdrawn,WITHDRAWN,2306459,"$299,000",LAND,Residential Lot,TBD Poplar Dr. S,Surfside Beach,29575,29B Surfside Beach--East of 17 and south of Surfside Drive,,,,
+withdrawn,WITHDRAWN,2605097,"$299,900",CONDO/TOWNHOUSE,Townhouse,610 15th Ave. S,Surfside Beach,29575,29B Surfside Beach--East of 17 and south of Surfside Drive,2,1,1,$170
+withdrawn,WITHDRAWN,2601162,"$299,900",CONDO/TOWNHOUSE,Townhouse,487 Waterend Dr.,Little River,29566,04A Little River Area--South of Hwy 9,3,2,1,$297
+withdrawn,WITHDRAWN,2527596,"$299,990",CONDO/TOWNHOUSE,Townhouse,1216 Pleasant View Dr,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$415
+withdrawn,WITHDRAWN,2520690,"$300,000",RESIDENTIAL,Detached,208 Sherwood Dr.,Conway,29526,21C Conway central between Long Ave & 905 / north of 501,4,2,0,$0
+withdrawn,WITHDRAWN,2508715,"$300,000",LAND,Commercial Lot - Sale,Lot 48 30th Ave. S,Atlantic Beach,29582,11D North Myrtle Beach Area--Atlantic Beach,,,,
+withdrawn,WITHDRAWN,2527595,"$301,990",CONDO/TOWNHOUSE,Townhouse,1218 Pleasant View Dr,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$415
+withdrawn,WITHDRAWN,2527597,"$301,990",CONDO/TOWNHOUSE,Townhouse,1214 Pleasant View Dr,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$415
+withdrawn,WITHDRAWN,2524072,"$306,380",CONDO/TOWNHOUSE,Townhouse,529 Ryegrass Way,Murrells Inlet,29576,27B Murrells Inlet - Horry County,3,2,1,$175
+withdrawn,WITHDRAWN,2523688,"$308,000",CONDO/TOWNHOUSE,Townhouse,307 N Sandridgebury Dr.,Little River,29566,04A Little River Area--South of Hwy 9,3,2,1,$292
+withdrawn,WITHDRAWN,2604067,"$308,000",CONDO/TOWNHOUSE,Condo,7600 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,0,$388
+withdrawn,WITHDRAWN,2524894,"$312,500",RESIDENTIAL,Manufactured Leased Land,454 Sanddollar Dr.,Surfside Beach,29575,27A Garden City Mainland & Pennisula,3,2,0,$376
+withdrawn,WITHDRAWN,2529654,"$312,840",COMMERCIAL/INDUSTRIAL,Special Use,TBD Lot 3 Daphane Dr.,Loris,29569,09B Conway to Longs Area--Between Rt. 905 & Waccamaw River,,,,
+withdrawn,WITHDRAWN,2522268,"$315,000",CONDO/TOWNHOUSE,Condo,4601 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,2,2,0,$775
+withdrawn,WITHDRAWN,2512912,"$315,000",RESIDENTIAL,Manufactured Leased Land,505 Sandpebble Dr.,Surfside Beach,29575,27A Garden City Mainland & Pennisula,2,2,0,$376
+withdrawn,WITHDRAWN,2517706,"$315,000",RESIDENTIAL,Detached,413 Cotton Grass Dr.,Loris,29569,07A Loris to Longs Area--South of 9 between Loris & Longs,4,2,1,$45
+withdrawn,WITHDRAWN,2606126,"$318,760",CONDO/TOWNHOUSE,Townhouse,8903 Brynlee Rd.,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,1,$392
+withdrawn,WITHDRAWN,2524287,"$319,000",RESIDENTIAL,Manufactured Leased Land,404 Twin Lakes Point,Surfside Beach,29575,27A Garden City Mainland & Pennisula,2,2,0,$364
+withdrawn,WITHDRAWN,2526242,"$319,000",CONDO/TOWNHOUSE,Townhouse,231 JE Edward Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,3,0,$425
+withdrawn,WITHDRAWN,2605835,"$319,500",RESIDENTIAL,Detached,800 Wilcot Branch Ct.,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,3,2,0,$69
+withdrawn,WITHDRAWN,2526069,"$323,375",RESIDENTIAL,Detached,1156 Oak Meadow Dr.,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,4,2,1,$130
+withdrawn,WITHDRAWN,2527594,"$324,990",CONDO/TOWNHOUSE,Townhouse,1220 Pleasant View Dr,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$415
+withdrawn,WITHDRAWN,2527598,"$324,990",CONDO/TOWNHOUSE,Townhouse,1212 Pleasant View Dr,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,2,1,$415
+withdrawn,WITHDRAWN,2603362,"$324,999",RESIDENTIAL,Detached,6627 Cherry Laurel Dr.,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,2,0,$95
+withdrawn,WITHDRAWN,2606624,"$325,000",CONDO/TOWNHOUSE,Condo,201 Hillside Dr. N,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,2,2,0,$721
+withdrawn,WITHDRAWN,2600097,"$325,000",RESIDENTIAL,Detached,2632 Scarecrow Way,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,1,$107
+withdrawn,WITHDRAWN,2526769,"$325,900",CONDO/TOWNHOUSE,Townhouse,1000 11th Ave. N,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,3,3,1,$570
+withdrawn,WITHDRAWN,2510502,"$328,500",RESIDENTIAL,Detached,155 Marsh Deer Place,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,3,2,0,$167
+withdrawn,WITHDRAWN,2528183,"$329,900",RESIDENTIAL,Manufactured with Land,1508 Sunnydale Ln.,Murrells Inlet,29576,27A Garden City Mainland & Pennisula,3,2,0,$0
+withdrawn,WITHDRAWN,2602669,"$330,000",RESIDENTIAL,Detached,520 Dundalk Dr.,Conway,29526,08A Loris to Conway Area--South of Loris above Rt 22,3,2,0,$33
+withdrawn,WITHDRAWN,2525649,"$332,000",CONDO/TOWNHOUSE,Condo,7600 N Ocean Blvd.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,0,$388
+withdrawn,WITHDRAWN,2523293,"$333,965",CONDO/TOWNHOUSE,Townhouse,8905 Hudson Ln.,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,1,$392
+withdrawn,WITHDRAWN,2607049,"$334,900",RESIDENTIAL,Detached,3234 Volterra Way,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,3,0,$396
+withdrawn,WITHDRAWN,2525950,"$335,000",CONDO/TOWNHOUSE,Condo,1001 Ray Costin Way,Murrells Inlet,29576,28B Surfside Area-Glensbay to GC Connector,3,2,0,$718
+withdrawn,WITHDRAWN,2602543,"$339,999",RESIDENTIAL,Detached,482 Shellbank Dr.,Longs,29568,03A Longs to Little River Area--North of 9 between Waccamaw River & Rt. 57,3,2,0,$90
+withdrawn,WITHDRAWN,2602130,"$340,000",RESIDENTIAL,Detached,172 Seasons Trace Loop,Longs,29568,09B Conway to Longs Area--Between Rt. 905 & Waccamaw River,4,2,0,$96
+withdrawn,WITHDRAWN,2529669,"$348,000",RESIDENTIAL,Detached,519 Harvest Ridge Way,Conway,29527,22A Conway Area--Southwest side of Conway between 378 and 701,4,2,1,$60
+withdrawn,WITHDRAWN,2602689,"$348,000",CONDO/TOWNHOUSE,Condo,601 N Hillside Dr. N,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,3,2,0,$475
+withdrawn,WITHDRAWN,2527357,"$349,000",RESIDENTIAL,Detached,Lot 121 Sea Breeze Way,Longs,29568,09A Conway to Longs Area--Between Rt. 90 & Waccamaw River,3,2,0,$108
+withdrawn,WITHDRAWN,2601664,"$349,000",RESIDENTIAL,Detached,1838 Castlebay Dr.,Conway,29526,21C Conway central between Long Ave & 905 / north of 501,4,2,0,$52
+withdrawn,WITHDRAWN,2602357,"$349,000",RESIDENTIAL,Detached,505 Night Heron Ct.,Murrells Inlet,29576,28B Surfside Area-Glensbay to GC Connector,2,2,0,$45
+withdrawn,WITHDRAWN,2521215,"$349,000",RESIDENTIAL,Semi-Detached,617 Surfside Dr.,Surfside Beach,29575,29A Surfside Beach--East of 17 & north of Surfside Drive,2,2,1,$0
+withdrawn,WITHDRAWN,2519489,"$349,900",RESIDENTIAL,Detached with HPR,459 Honeyhill Loop,Conway,29526,15B Conway Area--East edge of Conway north of Old Reaves Ferry Rd.,3,2,0,$66
+withdrawn,WITHDRAWN,2602102,"$349,990",LAND,Acreage,4950 Assembly Ln.,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,,,,
+withdrawn,WITHDRAWN,2606329,"$355,000",RESIDENTIAL,Detached,3725 Bells Lake Circle,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,4,2,0,$98
+withdrawn,WITHDRAWN,2516861,"$360,000",RESIDENTIAL,Detached,608 Carter Reid Ct.,Longs,29568,09B Conway to Longs Area--Between Rt. 905 & Waccamaw River,3,2,0,$68
+withdrawn,WITHDRAWN,2601678,"$360,000",RESIDENTIAL,Detached,272 Camrose Way,Myrtle Beach,29588,24A Myrtle Beach Area--south of 501 between West Ferry & Burcale,3,2,0,$63
+withdrawn,WITHDRAWN,2519129,"$360,000",RESIDENTIAL,Detached,543 Meadowgrass Ct.,Myrtle Beach,29588,26B Myrtle Beach Area--north of Bay Rd between Wacc. River & 707,4,2,1,$60
+withdrawn,WITHDRAWN,2602954,"$365,000",RESIDENTIAL,Detached,219 Pin Oak Dr.,Murrells Inlet,29576,27B Murrells Inlet - Horry County,3,2,0,$89
+withdrawn,WITHDRAWN,2600317,"$369,000",RESIDENTIAL,Detached,4201 Rockwood Dr.,Conway,29526,21A Conway central between 501 & 701 / north of 501,3,2,0,$32
+withdrawn,WITHDRAWN,2524230,"$369,600",RESIDENTIAL,Detached,523 Drake Ln.,Surfside Beach,29575,28B Surfside Area-Glensbay to GC Connector,4,3,0,$30
+withdrawn,WITHDRAWN,2527951,"$369,900",RESIDENTIAL,Detached,1226 Sennema Circle,Myrtle Beach,29588,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,5,3,1,$80
+withdrawn,WITHDRAWN,2526987,"$370,000",RESIDENTIAL,Detached,216 Pin Oak Dr.,Murrells Inlet,29576,27B Murrells Inlet - Horry County,4,2,1,$89
+withdrawn,WITHDRAWN,2604614,"$375,000",RESIDENTIAL,Detached,9 Pioneer Ln.,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,3,2,0,$0
+withdrawn,WITHDRAWN,2527342,"$379,900",CONDO/TOWNHOUSE,Townhouse,136 Parmelee Dr.,Murrells Inlet,29576,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,3,0,$165
+withdrawn,WITHDRAWN,2607375,"$379,999",CONDO/TOWNHOUSE,Condo,684 Misty Hammock Dr.,Murrells Inlet,29576,26A Myrtle Beach Area--south of 544 & west of 17 bypass M.I. Horry County,3,2,0,$385
+withdrawn,WITHDRAWN,2529300,"$380,000",RESIDENTIAL,Detached,276 Sundew Loop,Little River,29566,04B Little River Area--North of Hwy 9,3,2,1,$173
+withdrawn,WITHDRAWN,2605397,"$385,000",RESIDENTIAL,Detached,705 Wailea Circle,Little River,29566,04B Little River Area--North of Hwy 9,3,2,0,$116
+withdrawn,WITHDRAWN,2519873,"$389,000",CONDO/TOWNHOUSE,Condo,5137 Highway 17 Business,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,3,2,1,$697
+withdrawn,WITHDRAWN,2528946,"$389,000",RESIDENTIAL,Detached,1427 Half Penny Loop,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,0,$130
+withdrawn,WITHDRAWN,2601824,"$396,900",RESIDENTIAL,Detached,600 Table Rock Court,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,0,$120
+withdrawn,WITHDRAWN,2526015,"$399,000",RESIDENTIAL,Detached,1052 Agostino Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,3,0,$67
+withdrawn,WITHDRAWN,2603765,"$399,900",RESIDENTIAL,Detached,203 Chickasaw Ln.,Myrtle Beach,29579,24A Myrtle Beach Area--south of 501 between West Ferry & Burcale,4,2,1,$28
+withdrawn,WITHDRAWN,2513630,"$399,900",LAND,Commercial Lot - Sale,1342 Highway 90,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,,,,
+withdrawn,WITHDRAWN,2601386,"$399,999",CONDO/TOWNHOUSE,Condo,5300 N Ocean Blvd.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,1,1,0,"$1,150"
+withdrawn,WITHDRAWN,2521900,"$405,000",CONDO/TOWNHOUSE,Townhouse,6014 Catalina Dr.,North Myrtle Beach,29582,10C North Myrtle Beach Area--Barefoot Resort,4,3,1,$625
+withdrawn,WITHDRAWN,2603258,"$405,000",RESIDENTIAL,Detached,130 Hancher Dr.,Myrtle Beach,29588,23A Conway Area--South of Conway between 501 & Wacc. River,4,3,0,$84
+withdrawn,WITHDRAWN,2526597,"$409,900",CONDO/TOWNHOUSE,Condo,5507 Ocean Blvd. N,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,2,2,0,$616
+withdrawn,WITHDRAWN,2604867,"$409,900",CONDO/TOWNHOUSE,Townhouse,5451 Knobcone Loop,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,3,2,1,$313
+withdrawn,WITHDRAWN,2602776,"$409,900",RESIDENTIAL,Detached,403 Brandymill Blvd,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,3,3,0,$13
+withdrawn,WITHDRAWN,2600778,"$415,000",RESIDENTIAL,Detached,597 Heritage Downs Dr.,Conway,29526,15A Conway Area--East edge of Conway south of Old Reaves Ferry Rd.,3,2,1,$103
+withdrawn,WITHDRAWN,2521960,"$415,000",RESIDENTIAL,Detached,9016 Fort Hill Way,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,3,0,$120
+withdrawn,WITHDRAWN,2601819,"$419,900",RESIDENTIAL,Detached,3725 Park Pointe Ave.,Little River,29566,04A Little River Area--South of Hwy 9,3,2,0,$84
+withdrawn,WITHDRAWN,2505750,"$425,000",LAND,Acreage,183 Highway 66,Conway,29526,08A Loris to Conway Area--South of Loris above Rt 22,,,,
+withdrawn,WITHDRAWN,2601382,"$435,000",CONDO/TOWNHOUSE,Townhouse,2409 Thoroughfare Dr.,North Myrtle Beach,29582,10C North Myrtle Beach Area--Barefoot Resort,4,2,1,$625
+withdrawn,WITHDRAWN,2523513,"$439,900",RESIDENTIAL,Detached,254 Tall Palms Way,Little River,29566,04A Little River Area--South of Hwy 9,4,3,1,$105
+withdrawn,WITHDRAWN,2522036,"$440,000",RESIDENTIAL,Detached,1063 Huger Park Ave.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,3,0,$120
+withdrawn,WITHDRAWN,2607751,"$443,800",RESIDENTIAL,Detached,8207 Timber Ridge Rd.,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,3,2,1,$20
+withdrawn,WITHDRAWN,2414365,"$450,000",LAND,Acreage,TBD Daisy Rd.,Loris,29569,07A Loris to Longs Area--South of 9 between Loris & Longs,,,,
+withdrawn,WITHDRAWN,2602215,"$453,074",RESIDENTIAL,Detached,3037 Claredon St,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,0,$158
+withdrawn,WITHDRAWN,2606164,"$459,900",RESIDENTIAL,Detached,2428 Copper Meadow Loop,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,4,3,0,$106
+withdrawn,WITHDRAWN,2509183,"$460,000",RESIDENTIAL,Detached,971 Folly Rd.,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,4,3,1,$0
+withdrawn,WITHDRAWN,2526691,"$460,000",RESIDENTIAL,Detached,370 Rose Mallow Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,2,0,$150
+withdrawn,WITHDRAWN,2527767,"$465,000",RESIDENTIAL,Detached,5653 Highway 668,Conway,29526,14A Conway Area--Northern edge of Conway South of Rt 22,4,2,0,$0
+withdrawn,WITHDRAWN,2602217,"$469,900",RESIDENTIAL,Detached,2605 Muhly Ct.,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,5,3,1,$77
+withdrawn,WITHDRAWN,2508562,"$475,000",COMMERCIAL/INDUSTRIAL,Office,4123 Meeting St.,Loris,29569,02A Loris Area--central includes city of Loris,,,,
+withdrawn,WITHDRAWN,2523055,"$479,900",RESIDENTIAL,Detached,1224 Safe Haven Dr.,Myrtle Beach,29579,24B Myrtle Beach Area-- south of 501 between Burcale & waterway,3,2,0,$161
+withdrawn,WITHDRAWN,2608079,"$480,000",CONDO/TOWNHOUSE,Condo,158 Seawatch Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,2,2,0,"$1,440"
+withdrawn,WITHDRAWN,2522080,"$485,000",RESIDENTIAL,Detached,124 Windmeadows Dr.,Conway,29526,21B Conway central between 701 & Long Ave / north of 501,4,2,1,$0
+withdrawn,WITHDRAWN,2525138,"$489,000",RESIDENTIAL,Detached,6619 Colonial Dr.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,5,3,0,$60
+withdrawn,WITHDRAWN,2530137,"$489,500",RESIDENTIAL,Detached,2239 Jackson Circle,Little River,29566,04B Little River Area--North of Hwy 9,3,2,0,$108
+withdrawn,WITHDRAWN,2529255,"$494,000",RESIDENTIAL,Detached,673 Tidal Point Ln.,Myrtle Beach,29579,24B Myrtle Beach Area-- south of 501 between Burcale & waterway,4,3,0,$51
+withdrawn,WITHDRAWN,2601123,"$495,000",RESIDENTIAL,Detached,800 Perrin Dr.,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,2,2,0,$0
+withdrawn,WITHDRAWN,2507282,"$495,000",RESIDENTIAL,Detached,600-B 43rd Ave. S,North Myrtle Beach,29582,11E North Myrtle Beach Area--Windy Hill,3,2,0,$0
+withdrawn,WITHDRAWN,2530151,"$495,500",LAND,Residential Lot,410 14th Ave. N,Surfside Beach,29575,29A Surfside Beach--East of 17 & north of Surfside Drive,,,,
+withdrawn,WITHDRAWN,2509521,"$499,900",CONDO/TOWNHOUSE,Condo,1516 Edge Dr.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,4,3,0,$250
+withdrawn,WITHDRAWN,2507999,"$499,900",CONDO/TOWNHOUSE,Condo,2180 Waterview Dr.,North Myrtle Beach,29582,10C North Myrtle Beach Area--Barefoot Resort,3,2,0,"$1,240"
+withdrawn,WITHDRAWN,2506942,"$499,990",RESIDENTIAL,Detached,2245 Hazel Way,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,1,$347
+withdrawn,WITHDRAWN,2601550,"$500,000",RESIDENTIAL,Detached,816 Turtle Dove Path,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,3,2,0,$86
+withdrawn,WITHDRAWN,2525875,"$519,900",RESIDENTIAL,Detached,227 Kessinger Dr.,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,4,2,0,$110
+withdrawn,WITHDRAWN,2514068,"$520,000",COMMERCIAL/INDUSTRIAL,Business,403 Broadway St.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+withdrawn,WITHDRAWN,2602341,"$525,000",CONDO/TOWNHOUSE,Condo,9820 Queensway Blvd.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,3,3,0,"$1,304"
+withdrawn,WITHDRAWN,2603805,"$529,000",RESIDENTIAL,Detached,5558 Plantersville Pl.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,0,$100
+withdrawn,WITHDRAWN,2526153,"$530,000",CONDO/TOWNHOUSE,Condo,2701 S Ocean Blvd.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,3,3,0,$768
+withdrawn,WITHDRAWN,2602053,"$539,900",RESIDENTIAL,Detached,2034 Comradery Way,Murrells Inlet,29576,27B Murrells Inlet - Horry County,3,2,0,$99
+withdrawn,WITHDRAWN,2503778,"$548,705",RESIDENTIAL,Detached,7000 Denim Loop,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,0,$110
+withdrawn,WITHDRAWN,2529394,"$549,000",COMMERCIAL/INDUSTRIAL,Business,3390 E Hwy 9,Loris,29569,07A Loris to Longs Area--South of 9 between Loris & Longs,,,,
+withdrawn,WITHDRAWN,2523871,"$549,900",CONDO/TOWNHOUSE,Condo,2180 Waterview Dr.,North Myrtle Beach,29582,10C North Myrtle Beach Area--Barefoot Resort,3,3,0,"$1,240"
+withdrawn,WITHDRAWN,2600385,"$550,000",RESIDENTIAL,Detached,962 Henry James Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,3,1,$84
+withdrawn,WITHDRAWN,2524292,"$560,000",RESIDENTIAL,Detached,260 Hull St.,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,3,2,1,$125
+withdrawn,WITHDRAWN,2602785,"$565,700",RESIDENTIAL,Detached,1206 Coneflower Way,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,3,2,0,$315
+withdrawn,WITHDRAWN,2529325,"$573,900",RESIDENTIAL,Detached,3274 Moss Bridge Ln.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,3,0,$150
+withdrawn,WITHDRAWN,2524680,"$577,000",RESIDENTIAL,Detached,2654 Great Scott Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,3,0,$107
+withdrawn,WITHDRAWN,2601983,"$581,900",RESIDENTIAL,Detached,4648 Kates Bay Hwy.,Conway,29527,22A Conway Area--Southwest side of Conway between 378 and 701,4,3,0,$0
+withdrawn,WITHDRAWN,2518033,"$584,500",RESIDENTIAL,Detached,855 Waterton Ave.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,3,1,$106
+withdrawn,WITHDRAWN,2523266,"$588,135",RESIDENTIAL,Detached,2277 Hazel Way,Longs,29568,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,4,3,0,$341
+withdrawn,WITHDRAWN,2601045,"$594,900",RESIDENTIAL,Detached with HPR,1352 Littleleaf Loop,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,3,3,0,$315
+withdrawn,WITHDRAWN,2521508,"$599,999",CONDO/TOWNHOUSE,Condo,9994 Beach Club Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,3,3,0,"$1,840"
+withdrawn,WITHDRAWN,2528821,"$625,000",RESIDENTIAL,Detached with HPR,2700 Kashton Dr.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,3,2,1,$185
+withdrawn,WITHDRAWN,2601630,"$629,900",RESIDENTIAL,Detached,381 Saint Ives Rd.,Longs,29568,07A Loris to Longs Area--South of 9 between Loris & Longs,5,3,0,$0
+withdrawn,WITHDRAWN,2601533,"$630,000",CONDO/TOWNHOUSE,Condo,1819 N Ocean Blvd.,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,3,3,0,$922
+withdrawn,WITHDRAWN,2523156,"$639,000",MULTI-FAMILY,Triplex,2104 Perrin Dr.,North Myrtle Beach,29582,11C North Myrtle Beach Area--Crescent Beach,,,,
+withdrawn,WITHDRAWN,2527453,"$639,997",RESIDENTIAL,Detached,808 Maltby Alley,Myrtle Beach,29588,19A Myrtle Beach Area--Socastee,5,3,1,$125
+withdrawn,WITHDRAWN,2607967,"$645,000",CONDO/TOWNHOUSE,Condo,1990 N Waccamaw Dr.,Garden City Beach,29576,27A Garden City Mainland & Pennisula,2,2,0,$895
+withdrawn,WITHDRAWN,2513245,"$661,559",RESIDENTIAL,Detached,5460 Huntington Marsh Rd.,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,4,3,1,$50
+withdrawn,WITHDRAWN,2601986,"$662,750",RESIDENTIAL,Detached,4620 Kates Bay Hwy.,Conway,29527,22A Conway Area--Southwest side of Conway between 378 and 701,5,4,0,$0
+withdrawn,WITHDRAWN,2600892,"$664,000",RESIDENTIAL,Semi-Detached,535 Mary Lou Ave.,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,3,3,0,$0
+withdrawn,WITHDRAWN,2516838,"$670,260",RESIDENTIAL,Detached,4012 Viola Loop,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,3,1,$110
+withdrawn,WITHDRAWN,2510112,"$675,000",RESIDENTIAL,Detached,968 Shipmaster Ave.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,4,1,$106
+withdrawn,WITHDRAWN,2604056,"$685,000",RESIDENTIAL,Detached,960 Longwood Bluffs Circle,Murrells Inlet,29576,27B Murrells Inlet - Horry County,3,2,1,$99
+withdrawn,WITHDRAWN,2520249,"$689,000",MULTI-FAMILY,Duplex,6703 Bryant St.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,,,,
+withdrawn,WITHDRAWN,2524523,"$689,000",RESIDENTIAL,Detached,987 Shipmaster Ave.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,2,1,$106
+withdrawn,WITHDRAWN,2517831,"$699,900",LAND,Acreage,TBD Dukes Rd.,Conway,29526,08A Loris to Conway Area--South of Loris above Rt 22,,,,
+withdrawn,WITHDRAWN,2526080,"$704,900",RESIDENTIAL,Detached,6376 Cascata Dr.,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,4,2,0,$379
+withdrawn,WITHDRAWN,2601452,"$734,000",RESIDENTIAL,Detached,168 Starlit Way,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,3,2,1,$150
+withdrawn,WITHDRAWN,2520990,"$739,900",RESIDENTIAL,Detached,222 Highway 471,Conway,29526,14A Conway Area--Northern edge of Conway South of Rt 22,4,4,1,$0
+withdrawn,WITHDRAWN,2509588,"$745,999",MULTI-FAMILY,Apartments,603 30th Ave. S,Atlantic Beach,29582,11D North Myrtle Beach Area--Atlantic Beach,,,,
+withdrawn,WITHDRAWN,2601378,"$749,000",RESIDENTIAL,Detached,5752 Whitebark Dr.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,5,3,1,$96
+withdrawn,WITHDRAWN,2520069,"$749,000",RESIDENTIAL,Detached,5070 South First St.,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,4,3,0,$0
+withdrawn,WITHDRAWN,2600277,"$749,000",RESIDENTIAL,Detached,5807 Haskell Circle,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,5,2,1,$0
+withdrawn,WITHDRAWN,2526909,"$750,000",RESIDENTIAL,Detached,1957 24th Ave. N,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,3,3,0,$0
+withdrawn,WITHDRAWN,2608078,"$750,000",CONDO/TOWNHOUSE,Condo,8560 Queensway Blvd.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,2,2,0,"$1,124"
+withdrawn,WITHDRAWN,2526321,"$759,900",RESIDENTIAL,Detached with HPR,4835 Cantor Ct.,North Myrtle Beach,29582,11E North Myrtle Beach Area--Windy Hill,3,3,1,$737
+withdrawn,WITHDRAWN,2606683,"$774,900",RESIDENTIAL,Detached,1021 Gravelley Gulley Circle,Conway,29526,23A Conway Area--South of Conway between 501 & Wacc. River,3,2,0,$0
+withdrawn,WITHDRAWN,2603649,"$775,000",LAND,Commercial Lot - Sale,408 28th Ave. N,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,,,,
+withdrawn,WITHDRAWN,2603657,"$775,000",LAND,Commercial Lot - Sale,406 28th Ave. N,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,,,,
+withdrawn,WITHDRAWN,2603655,"$775,000",LAND,Commercial Lot - Sale,410 28th Ave. N,Myrtle Beach,29577,16F Myrtle Beach Area--10th Ave N to 29th Ave N,,,,
+withdrawn,WITHDRAWN,2526895,"$799,000",RESIDENTIAL,Detached,707 Thomas Ave.,North Myrtle Beach,29582,11F North Myrtle Beach Area--between Hwy 17 and waterway,5,4,1,$0
+withdrawn,WITHDRAWN,2510846,"$799,000",LAND,Acreage,TBD Powell Rd.,Green Sea,29545,01A Loris Area--West of Loris & North of HWY 9,,,,
+withdrawn,WITHDRAWN,2506196,"$799,000",CONDO/TOWNHOUSE,Condo,8500 Margate Circle,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,3,3,0,"$1,690"
+withdrawn,WITHDRAWN,2526011,"$799,000",CONDO/TOWNHOUSE,Condo,9650 Shore Dr.,Myrtle Beach,29572,16B Myrtle Beach Area--Arcadian,2,2,0,"$1,014"
+withdrawn,WITHDRAWN,2606067,"$799,000",LAND,Residential Lot,2903 S Ocean Blvd.,North Myrtle Beach,29582,11D North Myrtle Beach Area--Atlantic Beach,,,,
+withdrawn,WITHDRAWN,2420053,"$799,900",RESIDENTIAL,Detached,1100 Maccoa Dr.,Conway,29526,10B Myrtle Beach Area--Carolina Forest,5,4,0,$135
+withdrawn,WITHDRAWN,2603746,"$800,000",RESIDENTIAL,Detached,301B Flagg St.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,4,3,1,$0
+withdrawn,WITHDRAWN,2524785,"$814,000",RESIDENTIAL,Detached,8488 Cape Dutch Loop,Myrtle Beach,29572,16C Myrtle Beach Area--79th Ave N to Dunes Cove,3,2,0,$258
+withdrawn,WITHDRAWN,2523772,"$814,900",MULTI-FAMILY,Apartments,411 Cambridge Circle,Murrells Inlet,29576,28C Garden City Extension to merging of 17 Business & Bypass,,,,
+withdrawn,WITHDRAWN,2525709,"$815,000",RESIDENTIAL,Detached,206 30th Ave. N,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,6,4,0,$0
+withdrawn,WITHDRAWN,2420150,"$824,900",RESIDENTIAL,Detached,1012 Maccoa Dr.,Conway,29526,10B Myrtle Beach Area--Carolina Forest,5,4,0,$135
+withdrawn,WITHDRAWN,2515563,"$899,900",MULTI-FAMILY,Quad,304 1st Ave. N,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+withdrawn,WITHDRAWN,2428603,"$899,900",RESIDENTIAL,Detached,1017 Muscovy Pl.,Conway,29526,10B Myrtle Beach Area--Carolina Forest,5,4,0,$135
+withdrawn,WITHDRAWN,2509222,"$930,000",RESIDENTIAL,Detached,573 Starlit Way,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,4,3,1,$150
+withdrawn,WITHDRAWN,2503420,"$950,000",LAND,Acreage,TBD Daphane Dr.,Loris,29569,09B Conway to Longs Area--Between Rt. 905 & Waccamaw River,,,,
+withdrawn,WITHDRAWN,2503421,"$950,000",COMMERCIAL/INDUSTRIAL,Special Use,TBD Daphane Dr.,Loris,29569,09B Conway to Longs Area--Between Rt. 905 & Waccamaw River,,,,
+withdrawn,WITHDRAWN,2514342,"$950,000",RESIDENTIAL,Detached,1342 Highway 90,Conway,29526,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,3,2,0,$0
+withdrawn,WITHDRAWN,2527885,"$999,000",RESIDENTIAL,Detached,11051 Lee Circle,Murrells Inlet,29576,27B Murrells Inlet - Horry County,4,3,0,$0
+withdrawn,WITHDRAWN,2600506,"$1,024,930",RESIDENTIAL,Detached,226 Atlantic Breeze St.,Myrtle Beach,29572,16C Myrtle Beach Area--79th Ave N to Dunes Cove,5,3,1,$295
+withdrawn,WITHDRAWN,2505049,"$1,099,000",RESIDENTIAL,Detached,214 2nd Ave. S,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,7,4,0,$0
+withdrawn,WITHDRAWN,2515290,"$1,100,000",RESIDENTIAL,Detached,487 Trestle Way,Conway,29526,15A Conway Area--East edge of Conway south of Old Reaves Ferry Rd.,4,4,2,$93
+withdrawn,WITHDRAWN,2527294,"$1,100,000",RESIDENTIAL,Detached,222 9th Ave. S,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,4,3,0,$0
+withdrawn,WITHDRAWN,2603058,"$1,180,000",COMMERCIAL/INDUSTRIAL,Retail,3612 S Ocean Blvd.,North Myrtle Beach,29582,11E North Myrtle Beach Area--Windy Hill,,,,
+withdrawn,WITHDRAWN,2528732,"$1,199,000",RESIDENTIAL,Detached with HPR,550 Olde Mill Dr.,North Myrtle Beach,29582,11E North Myrtle Beach Area--Windy Hill,4,4,1,$898
+withdrawn,WITHDRAWN,2517667,"$1,199,000",MULTI-FAMILY,Apartments,614 N 37th Ave. N,Myrtle Beach,29577,16E Myrtle Beach Area--29th Ave N to 48th Ave N,,,,
+withdrawn,WITHDRAWN,2526801,"$1,400,000",RESIDENTIAL,Detached,11051 Lee Circle,Murrells Inlet,29576,27B Murrells Inlet - Horry County,5,6,1,$0
+withdrawn,WITHDRAWN,2525561,"$1,449,900",MULTI-FAMILY,Other,306 6th Ave. N,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,,,,
+withdrawn,WITHDRAWN,2528030,"$1,475,000",RESIDENTIAL,Detached,871 Redwolf Trail,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,3,1,$100
+withdrawn,WITHDRAWN,2604267,"$1,599,900",RESIDENTIAL,Detached,5515 Porcher Ave.,Myrtle Beach,29577,16D Myrtle Beach Area--48th Ave N to 79th Ave N,4,3,1,$0
+withdrawn,WITHDRAWN,2522612,"$1,799,000",LAND,Farm,tbd Highway 9,Green Sea,29545,01A Loris Area--West of Loris & North of HWY 9,,,,
+withdrawn,WITHDRAWN,2602021,"$1,815,000",MULTI-FAMILY,Duplex,118 A&B N Yaupon Dr.,Surfside Beach,29575,29A Surfside Beach--East of 17 & north of Surfside Drive,,,,
+withdrawn,WITHDRAWN,2607069,"$1,899,000",COMMERCIAL/INDUSTRIAL,Office,3802 S Ocean Blvd.,North Myrtle Beach,29582,11E North Myrtle Beach Area--Windy Hill,,,,
+withdrawn,WITHDRAWN,2522431,"$1,899,999",RESIDENTIAL,Detached,106 Edward Ave.,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,4,3,1,$0
+withdrawn,WITHDRAWN,2507308,"$1,999,888",LAND,Multi-Family Lot,Mill Pond Rd.,Conway,29526,21A Conway central between 501 & 701 / north of 501,,,,
+withdrawn,WITHDRAWN,2507307,"$1,999,888",LAND,Commercial Lot - Sale,TBD Mill Pond Rd.,Conway,29526,21A Conway central between 501 & 701 / north of 501,,,,
+withdrawn,WITHDRAWN,2528798,"$2,200,000",LAND,Acreage,712 Highway 45,Loris,29569,01A Loris Area--West of Loris & North of HWY 9,,,,
+withdrawn,WITHDRAWN,2513263,"$2,300,000",RESIDENTIAL,Detached,852 Waterton Ave.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,5,6,0,$105
+withdrawn,WITHDRAWN,2600483,"$2,390,000",RESIDENTIAL,Detached,1674 Malaga Circle,Myrtle Beach,29579,10A Conway to Myrtle Beach Area--between 90 & waterway Redhill/Grande Dunes,4,4,2,$344
+withdrawn,WITHDRAWN,2529784,"$2,490,000",RESIDENTIAL,Detached,131 John T Ct.,Little River,29566,04B Little River Area--North of Hwy 9,3,2,1,$0
+withdrawn,WITHDRAWN,1524260,"$2,500,000",LAND,Commercial Lot - Sale,TBD Highway 17 Business,Murrells Inlet,29576,40A Murrells Inlet - Georgetown County,,,,
+withdrawn,WITHDRAWN,2525497,"$2,999,000",LAND,Acreage,Highway 45,Loris,29569,08A Loris to Conway Area--South of Loris above Rt 22,,,,
+withdrawn,WITHDRAWN,2526787,"$3,000,000",LAND,Commercial Lot - Lease,TBD Highway 90,Longs,29568,09A Conway to Longs Area--Between Rt. 90 & Waccamaw River,,,,
+withdrawn,WITHDRAWN,2528701,"$4,200,000",LAND,Acreage,Hwy 66 Hewitt Rd.,Loris,29569,03B Loris to Longs Area--North of 9 between Loris & Longs,,,,
+withdrawn,WITHDRAWN,2219807,"$4,499,900",LAND,Residential Lot,205 N Ocean Blvd.,North Myrtle Beach,29582,11B North Myrtle Beach Area--Ocean Drive,,,,

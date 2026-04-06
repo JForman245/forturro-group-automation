@@ -1,0 +1,44 @@
+{
+  "agent_name": "mls-data-agent", 
+  "role": "MLS Data Pipeline & Market Analysis",
+  "model": "claude-sonnet-4-20250514",
+  "check_frequency": "2h",
+  "market_focus": {
+    "primary_area": "Grand Strand/Myrtle Beach, SC",
+    "counties": ["Horry", "Georgetown"],
+    "property_types": ["single_family", "multi_family", "commercial_land"],
+    "price_ranges": {
+      "single_family": [200000, 800000],
+      "multi_family": [500000, 5000000], 
+      "commercial_land": [100000, 2000000]
+    }
+  },
+  "investment_criteria": {
+    "cap_rate_minimum": 8.0,
+    "cash_on_cash_minimum": 12.0,
+    "price_per_door_maximum": 125000,
+    "fa_zoned_land": true
+  },
+  "data_sources": [
+    {
+      "name": "CCAR MLS",
+      "platform": "Paragon 5",
+      "access_method": "scraper",
+      "update_frequency": "2h"
+    }
+  ],
+  "deliverables": {
+    "daily_summary": true,
+    "weekly_comps": true, 
+    "monthly_trends": true,
+    "investment_alerts": true
+  },
+  "escalation_triggers": [
+    "investment_opportunity_match",
+    "significant_market_shift",
+    "comp_discrepancy",
+    "data_integrity_issue"
+  ],
+  "tools": ["mls_scraper", "comp_analysis", "market_trends", "investment_filters"],
+  "status": "initializing"
+}

@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Forturro Group — Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --bg-primary: #07070d;
+    --bg-secondary: #0d0d17;
+    --bg-card: rgba(15, 15, 25, 0.85);
+    --bg-card-hover: rgba(20, 20, 35, 0.95);
+    --gold-primary: #c9a84c;
+    --gold-light: #e8d48b;
+    --gold-dark: #8a6d1b;
+    --gold-glow: rgba(201, 168, 76, 0.15);
+    --gold-gradient: linear-gradient(135deg, #c9a84c, #e8d48b, #c9a84c);
+    --text-primary: #f0ece2;
+    --text-secondary: #8a8a9a;
+    --text-muted: #55556a;
+    --border-color: rgba(201, 168, 76, 0.12);
+    --border-glow: rgba(201, 168, 76, 0.25);
+    --success: #4ade80;
+    --warning: #fbbf24;
+    --danger: #f87171;
+    --card-radius: 16px;
+    --glass-blur: 20px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Animated background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 168, 76, 0.06), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 50%, rgba(201, 168, 76, 0.03), transparent),
+        radial-gradient(ellipse 60% 40% at 20% 80%, rgba(201, 168, 76, 0.03), transparent);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.header {
+    position: relative;
+    z-index: 10;
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    backdrop-filter: blur(var(--glass-blur));
+    background: rgba(7, 7, 13, 0.8);
+}
+
+.header-left { display: flex; align-items: center; gap: 16px; }
+
+.logo-mark {
+    width: 42px; height: 42px;
+    background: var(--gold-gradient);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--bg-primary);
+    box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+}
+
+.header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.5px;
+}
+
+.header-subtitle {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.last-updated {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.status-dot {
+    width: 8px; height: 8px;
+    background: var(--success);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+    50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+}
+
+/* ── Stats Bar ────────────────────────────────────────────── */
+.stats-bar {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding: 24px 40px;
+}
+
+.stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    padding: 20px 24px;
+    backdrop-filter: blur(var(--glass-blur));
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gold-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.stat-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-glow);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(201, 168, 76, 0.08);
+}
+
+.stat-card:hover::before { opacity: 1; }
+
+.stat-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+}
+
+.stat-sub {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 6px;
+}
+
+/* ── Main Grid ────────────────────────────────────────────── */
+.main-grid {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 0 40px 40px;
+}
+
+/* ── Card Base ────────────────────────────────────────────── */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    backdrop-filter: blur(var(--glass-blur));
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--border-glow);
+    box-shadow: 0 4px 24px rgba(201, 168, 76, 0.05);
+}
+
+.card-header {
+    padding: 20px 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--gold-primary);
+}
+
+.card-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: var(--gold-glow);
+    color: var(--gold-primary);
+    font-weight: 500;
+}
+
+.card-body { padding: 20px 24px; }
+
+/* ── Pipeline ─────────────────────────────────────────────── */
+.pipeline-stages { display: flex; flex-direction: column; gap: 12px; }
+
+.pipeline-stage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: rgba(201, 168, 76, 0.04);
+    border: 1px solid rgba(201, 168, 76, 0.06);
+    transition: all 0.2s ease;
+}
+
+.pipeline-stage:hover {
+    background: rgba(201, 168, 76, 0.08);
+    border-color: rgba(201, 168, 76, 0.15);
+    cursor: pointer;
+}
+
+.pipeline-stage .chevron {
+    font-size: 12px;
+    color: var(--text-muted);
+    transition: transform 0.2s ease;
+    margin-left: 8px;
+}
+
+.pipeline-stage.expanded .chevron {
+    transform: rotate(90deg);
+}
+
+.stage-deals {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-bottom: 4px;
+}
+
+.stage-deals.open {
+    max-height: 1000px;
+}
+
+.stage-deal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px 10px 28px;
+    border-left: 2px solid rgba(201, 168, 76, 0.15);
+    margin-left: 12px;
+    background: rgba(201, 168, 76, 0.02);
+}
+
+.stage-deal-item + .stage-deal-item {
+    border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.stage-deal-info { flex: 1; }
+
+.stage-deal-address {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.stage-deal-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.stage-deal-meta span + span::before {
+    content: ' · ';
+}
+
+.stage-deal-price {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold-light);
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.stage-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.stage-right { display: flex; align-items: center; gap: 12px; }
+
+.stage-count {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold-light);
+    min-width: 24px;
+    text-align: center;
+}
+
+.stage-value {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.stage-bar {
+    height: 3px;
+    background: rgba(201, 168, 76, 0.1);
+    border-radius: 2px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.stage-bar-fill {
+    height: 100%;
+    background: var(--gold-gradient);
+    border-radius: 2px;
+    transition: width 1s ease;
+}
+
+/* ── Deals List ───────────────────────────────────────────── */
+.deal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.deal-item:last-child { border-bottom: none; }
+
+.deal-info { flex: 1; }
+
+.deal-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.deal-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.deal-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gold-light);
+}
+
+/* ── Calendar ─────────────────────────────────────────────── */
+.event-item {
+    display: flex;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.event-item:last-child { border-bottom: none; }
+
+.event-time-block {
+    min-width: 52px;
+    text-align: center;
+    padding: 8px;
+    background: rgba(201, 168, 76, 0.06);
+    border-radius: 8px;
+    border: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.event-day {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-date {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold-primary);
+}
+
+.event-details { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+.event-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.event-subtitle {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+/* ── Tasks ────────────────────────────────────────────────── */
+.task-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.task-item:last-child { border-bottom: none; }
+
+.task-check {
+    width: 18px; height: 18px;
+    border: 2px solid var(--gold-dark);
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.task-check.overdue { border-color: var(--danger); }
+
+.task-content { flex: 1; }
+
+.task-name {
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.task-due {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.task-due.overdue { color: var(--danger); }
+
+/* ── MLS Stats ────────────────────────────────────────────── */
+.mls-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.mls-stat {
+    text-align: center;
+    padding: 16px 12px;
+    background: rgba(201, 168, 76, 0.04);
+    border-radius: 10px;
+    border: 1px solid rgba(201, 168, 76, 0.06);
+}
+
+.mls-stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gold-light);
+}
+
+.mls-stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.mls-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.mls-bar {
+    flex: 1;
+    background: var(--gold-gradient);
+    border-radius: 4px 4px 0 0;
+    min-height: 4px;
+    position: relative;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.mls-bar:last-child { opacity: 1; }
+.mls-bar:hover { opacity: 1; }
+
+.mls-bar-label {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* ── Tracerfy Credits ─────────────────────────────────────── */
+.credits-display {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: rgba(201, 168, 76, 0.04);
+    border-radius: 10px;
+    border: 1px solid rgba(201, 168, 76, 0.06);
+}
+
+.credits-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold-light);
+}
+
+.credits-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.credits-sub {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+/* ── Transaction Card ──────────────────────────────────────── */
+.txn-item {
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.txn-item:last-child { border-bottom: none; }
+.txn-item:hover { background: rgba(201, 168, 76, 0.04); }
+.txn-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+}
+.txn-left { flex: 1; }
+.txn-address {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.txn-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.txn-side {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.txn-side.buyer {
+    color: #60a5fa;
+    background: rgba(96, 165, 250, 0.1);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+}
+.txn-side.seller {
+    color: #a78bfa;
+    background: rgba(167, 139, 250, 0.1);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+}
+.txn-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+.txn-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gold-light);
+}
+.txn-close-date {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+.txn-close-date.soon { color: var(--warning); font-weight: 600; }
+.txn-close-date.urgent { color: var(--danger); font-weight: 600; }
+/* Timeline Panel */
+.txn-timeline {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    background: rgba(7, 7, 13, 0.5);
+}
+.txn-timeline.open { max-height: 300px; }
+.timeline-inner {
+    padding: 0 16px 16px 16px;
+    display: flex;
+    gap: 0;
+    position: relative;
+}
+.timeline-inner::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 40px;
+    right: 40px;
+    height: 2px;
+    background: rgba(201, 168, 76, 0.15);
+}
+.timeline-event {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--gold-dark);
+    background: var(--bg-primary);
+    margin-bottom: 8px;
+}
+.timeline-dot.completed { background: var(--success); border-color: var(--success); }
+.timeline-dot.upcoming { background: var(--bg-primary); border-color: var(--gold-primary); }
+.timeline-dot.overdue { background: var(--danger); border-color: var(--danger); animation: pulse 2s infinite; }
+.timeline-dot.today { background: var(--warning); border-color: var(--warning); box-shadow: 0 0 8px rgba(251, 191, 36, 0.4); }
+.timeline-dot.empty { border-style: dashed; border-color: var(--text-muted); opacity: 0.4; }
+.timeline-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+.timeline-date { font-size: 12px; font-weight: 500; color: var(--text-secondary); }
+.timeline-date.overdue { color: var(--danger); font-weight: 600; }
+.timeline-date.soon { color: var(--warning); }
+.timeline-date.empty { color: var(--text-muted); font-style: italic; }
+.txn-chevron {
+    font-size: 11px;
+    color: var(--text-muted);
+    transition: transform 0.25s ease;
+    margin-left: 12px;
+}
+.txn-item.expanded .txn-chevron { transform: rotate(90deg); }
+.listing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.listing-item:last-child { border-bottom: none; }
+.listing-address { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+.listing-meta { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+.listing-price { font-size: 14px; font-weight: 600; color: var(--gold-light); white-space: nowrap; }
+
+/* Stale listings */
+.stale-table { width: 100%; border-collapse: collapse; }
+.stale-table th {
+    text-align: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--text-muted);
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(248, 113, 113, 0.1);
+}
+.stale-table th:last-child, .stale-table td:last-child { text-align: right; }
+.stale-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    font-size: 13px;
+}
+.stale-table tr:last-child td { border-bottom: none; }
+.stale-table tr:hover td { background: rgba(248, 113, 113, 0.03); }
+.stale-dom {
+    font-weight: 700;
+    color: #f87171;
+    font-size: 14px;
+}
+.stale-addr { color: var(--text-primary); font-weight: 500; }
+.stale-contact { color: var(--text-secondary); }
+.stale-price { color: var(--gold-light); font-weight: 600; }
+
+/* ── Loading & Empty ──────────────────────────────────────── */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.loading::before {
+    content: '';
+    width: 16px; height: 16px;
+    border: 2px solid var(--border-color);
+    border-top-color: var(--gold-primary);
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.empty {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+/* ── Scrollable card body ──────────────────────────────────── */
+.card-body-scroll {
+    padding: 20px 24px;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.card-body-scroll::-webkit-scrollbar { width: 4px; }
+.card-body-scroll::-webkit-scrollbar-track { background: transparent; }
+.card-body-scroll::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 2px; }
+
+/* ── Animations ───────────────────────────────────────────── */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card, .stat-card {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.05s; }
+.stat-card:nth-child(2) { animation-delay: 0.1s; }
+.stat-card:nth-child(3) { animation-delay: 0.15s; }
+.stat-card:nth-child(4) { animation-delay: 0.2s; }
+.stat-card:nth-child(5) { animation-delay: 0.25s; }
+
+.main-grid .card:nth-child(1) { animation-delay: 0.3s; }
+.main-grid .card:nth-child(2) { animation-delay: 0.35s; }
+.main-grid .card:nth-child(3) { animation-delay: 0.4s; }
+.main-grid .card:nth-child(4) { animation-delay: 0.45s; }
+.main-grid .card:nth-child(5) { animation-delay: 0.5s; }
+.main-grid .card:nth-child(6) { animation-delay: 0.55s; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="header-left">
+        <div class="logo-mark">F</div>
+        <div>
+            <div class="header-title">The Forturro Group</div>
+            <div class="header-subtitle">Command Center</div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="last-updated">
+            <span class="status-dot"></span>
+            <span id="lastUpdated">Loading...</span>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Stats Bar -->
+<div class="stats-bar">
+    <div class="stat-card">
+        <div class="stat-label">YTD Closed Volume</div>
+        <div class="stat-value" id="statYtdVolume">—</div>
+        <div class="stat-sub" id="statYtdCount"></div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-label">Avg Sale Price</div>
+        <div class="stat-value" id="statAvgPrice">—</div>
+        <div class="stat-sub">per transaction</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-label">Active Pipeline</div>
+        <div class="stat-value" id="statPipeline">—</div>
+        <div class="stat-sub" id="statPipelineCount"></div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-label">Leads This Week</div>
+        <div class="stat-value" id="statLeadsWeek">—</div>
+        <div class="stat-sub">MLS expired & withdrawn</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-label">Tracerfy Credits</div>
+        <div class="stat-value" id="statCredits">—</div>
+        <div class="stat-sub" id="statCreditsRuns"></div>
+    </div>
+</div>
+
+<!-- Stale Listings Alert -->
+<div id="staleSection" style="padding: 0 40px 20px; position: relative; z-index: 10; display: none;">
+    <div class="card" style="border-color: rgba(248, 113, 113, 0.25);">
+        <div class="card-header" style="border-bottom-color: rgba(248, 113, 113, 0.15);">
+            <span class="card-title" style="color: #f87171;">⚠ Stale Listings — 200+ Days on Market</span>
+            <span class="card-badge" id="staleBadge" style="background: rgba(248, 113, 113, 0.12); color: #f87171;">—</span>
+        </div>
+        <div class="card-body" id="staleBody">
+            <div class="loading">Checking...</div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Dashboard Grid -->
+<div class="main-grid">
+
+    <!-- Deal Pipeline -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Deal Pipeline</span>
+            <span class="card-badge" id="pipelineBadge">—</span>
+        </div>
+        <div class="card-body-scroll" id="pipelineBody">
+            <div class="loading">Loading pipeline...</div>
+        </div>
+    </div>
+
+    <!-- Active Listings -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Active Listings</span>
+            <span class="card-badge" id="listingsBadge">—</span>
+        </div>
+        <div class="card-body-scroll" id="listingsBody">
+            <div class="loading">Loading listings...</div>
+        </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Calendar — Next 7 Days</span>
+            <span class="card-badge" id="calendarBadge">—</span>
+        </div>
+        <div class="card-body-scroll" id="calendarBody">
+            <div class="loading">Loading calendar...</div>
+        </div>
+    </div>
+
+    <!-- Pending Transactions -->
+    <div class="card" style="grid-column: span 2;">
+        <div class="card-header">
+            <span class="card-title">Pending Transactions</span>
+            <span class="card-badge" id="pendingBadge">—</span>
+        </div>
+        <div class="card-body-scroll" id="pendingBody" style="max-height: 500px;">
+            <div class="loading">Loading pending transactions...</div>
+        </div>
+    </div>
+
+    <!-- MLS Lead Stats -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">MLS Leads</span>
+            <span class="card-badge" id="mlsBadge">Today</span>
+        </div>
+        <div class="card-body" id="mlsBody">
+            <div class="loading">Loading MLS stats...</div>
+        </div>
+    </div>
+
+    <!-- Tasks -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Tasks & Reminders</span>
+            <span class="card-badge" id="tasksBadge">—</span>
+        </div>
+        <div class="card-body-scroll" id="tasksBody">
+            <div class="loading">Loading tasks...</div>
+        </div>
+    </div>
+
+    <!-- Closed Sales YTD -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Closed Sales YTD</span>
+            <span class="card-badge" id="closedBadge">—</span>
+        </div>
+        <div class="card-body-scroll" id="closedBody">
+            <div class="loading">Loading closed sales...</div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// ── Formatting ─────────────────────────────────────────────
+function fmt$(n) {
+    if (!n || n === 0) return '$0';
+    if (n >= 1000000) return '$' + (n/1000000).toFixed(1) + 'M';
+    if (n >= 1000) return '$' + (n/1000).toFixed(0) + 'K';
+    return '$' + n.toLocaleString();
+}
+
+function fmtFull$(n) {
+    if (!n) return '$0';
+    return '$' + Number(n).toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0});
+}
+
+function timeAgo(dateStr) {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    const now = new Date();
+    const days = Math.floor((now - d) / 86400000);
+    if (days === 0) return 'Today';
+    if (days === 1) return 'Yesterday';
+    return days + ' days ago';
+}
+
+// ── Data Fetch ─────────────────────────────────────────────
+async function fetchJSON(url) {
+    try {
+        const resp = await fetch(url);
+        return await resp.json();
+    } catch (e) {
+        console.error('Fetch error:', url, e);
+        return null;
+    }
+}
+
+// ── Render Functions ───────────────────────────────────────
+async function loadDeals() {
+    const data = await fetchJSON('/api/deals');
+    if (!data || !data.pipeline) return;
+
+    const stats = data.stats || {};
+    
+    // Stats bar
+    document.getElementById('statYtdVolume').textContent = fmt$(stats.ytd_volume);
+    document.getElementById('statYtdCount').textContent = (stats.ytd_count || 0) + ' transactions';
+    document.getElementById('statAvgPrice').textContent = fmt$(stats.avg_price);
+    document.getElementById('statPipeline').textContent = fmt$(stats.pipeline_value);
+    document.getElementById('statPipelineCount').textContent = (stats.total_deals || 0) + ' total deals';
+
+    // Pipeline card
+    const pipeline = data.pipeline;
+    const stages = Object.keys(pipeline);
+    const maxCount = Math.max(...stages.map(s => pipeline[s].length), 1);
+    
+    let totalActive = 0;
+    let html = '<div class="pipeline-stages">';
+    stages.forEach((stage, idx) => {
+        const deals = pipeline[stage];
+        const stageValue = deals.reduce((sum, d) => sum + (d.price || 0), 0);
+        const pct = (deals.length / maxCount) * 100;
+        if (!stage.toLowerCase().includes('closed')) totalActive += deals.length;
+        
+        const stageId = 'stage-deals-' + idx;
+        html += `
+            <div class="pipeline-stage" onclick="toggleStageDeals('${stageId}', this)">
+                <span class="stage-name">${stage}</span>
+                <div class="stage-right">
+                    <span class="stage-value">${fmt$(stageValue)}</span>
+                    <span class="stage-count">${deals.length}</span>
+                    <span class="chevron">▶</span>
+                </div>
+            </div>
+            <div class="stage-deals" id="${stageId}">`;
+        
+        deals.forEach(d => {
+            const addr = d.address || d.name || 'No address';
+            const closing = d.closingDate ? formatClosingDate(d.closingDate) : 'No closing date';
+            const people = (d.peopleRoles || []).map(p => {
+                const role = p.role ? p.role : '';
+                return role ? `${p.name} (${role})` : p.name;
+            }).filter(Boolean).join(', ') || d.contact || 'No contact';
+            
+            html += `
+                <div class="stage-deal-item">
+                    <div class="stage-deal-info">
+                        <div class="stage-deal-address">${addr}</div>
+                        <div class="stage-deal-meta">
+                            <span>📅 ${closing}</span>
+                            <span>👤 ${people}</span>
+                        </div>
+                    </div>
+                    <div class="stage-deal-price">${fmtFull$(d.price)}</div>
+                </div>`;
+        });
+        
+        html += '</div>';
+    });
+    html += '</div>';
+    
+    document.getElementById('pipelineBody').innerHTML = html;
+    document.getElementById('pipelineBadge').textContent = totalActive + ' active';
+
+    // Active listings count for the old badge (now handled by loadTransactions)
+    // loadTransactions handles the listings + pending cards separately
+
+    // Closed YTD
+    const closed = data.closed_ytd || [];
+    if (closed.length === 0) {
+        document.getElementById('closedBody').innerHTML = '<div class="empty">No closed deals YTD</div>';
+    } else {
+        let chtml = '';
+        closed.forEach(d => {
+            chtml += `
+                <div class="deal-item">
+                    <div class="deal-info">
+                        <div class="deal-name">${d.name || d.address || 'Untitled'}</div>
+                        <div class="deal-meta">Closed ${timeAgo(d.closedAt)}</div>
+                    </div>
+                    <div class="deal-price">${fmtFull$(d.price)}</div>
+                </div>`;
+        });
+        document.getElementById('closedBody').innerHTML = chtml;
+    }
+    document.getElementById('closedBadge').textContent = fmtFull$(stats.ytd_volume);
+}
+
+async function loadCalendar() {
+    const data = await fetchJSON('/api/calendar');
+    if (!data) return;
+
+    const events = data.events || [];
+    if (events.length === 0) {
+        document.getElementById('calendarBody').innerHTML = '<div class="empty">No upcoming events</div>';
+        document.getElementById('calendarBadge').textContent = '0 events';
+        return;
+    }
+
+    let html = '';
+    events.forEach(evt => {
+        const start = evt.start || evt.startTime || '';
+        const summary = evt.summary || evt.title || 'Untitled Event';
+        const location = evt.location || '';
+        
+        let day = '', date = '', time = '';
+        if (start) {
+            const d = new Date(start);
+            if (!isNaN(d)) {
+                day = d.toLocaleDateString('en-US', { weekday: 'short' });
+                date = d.getDate();
+                time = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+            }
+        }
+
+        html += `
+            <div class="event-item">
+                <div class="event-time-block">
+                    <div class="event-day">${day}</div>
+                    <div class="event-date">${date}</div>
+                </div>
+                <div class="event-details">
+                    <div class="event-title">${summary}</div>
+                    <div class="event-subtitle">${time}${location ? ' · ' + location : ''}</div>
+                </div>
+            </div>`;
+    });
+
+    document.getElementById('calendarBody').innerHTML = html;
+    document.getElementById('calendarBadge').textContent = events.length + ' events';
+}
+
+async function loadTasks() {
+    const data = await fetchJSON('/api/tasks');
+    if (!data) return;
+
+    const tasks = data.tasks || [];
+    if (tasks.length === 0) {
+        document.getElementById('tasksBody').innerHTML = '<div class="empty">No open tasks</div>';
+        document.getElementById('tasksBadge').textContent = '0';
+        return;
+    }
+
+    const overdue = tasks.filter(t => t.isOverdue).length;
+    let html = '';
+    tasks.forEach(t => {
+        const isOd = t.isOverdue;
+        html += `
+            <div class="task-item">
+                <div class="task-check ${isOd ? 'overdue' : ''}"></div>
+                <div class="task-content">
+                    <div class="task-name">${t.name || 'Untitled Task'}</div>
+                    <div class="task-due ${isOd ? 'overdue' : ''}">
+                        ${t.dueDate ? (isOd ? '⚠ Overdue · ' : '') + t.dueDate : 'No due date'}
+                        ${t.personName ? ' · ' + t.personName : ''}
+                    </div>
+                </div>
+            </div>`;
+    });
+
+    document.getElementById('tasksBody').innerHTML = html;
+    document.getElementById('tasksBadge').textContent = tasks.length + (overdue ? ` (${overdue} overdue)` : '');
+}
+
+async function loadMLS() {
+    const data = await fetchJSON('/api/mls-stats');
+    if (!data) return;
+
+    const today = data.today || {};
+    const history = data.history || [];
+
+    let html = '<div class="mls-grid">';
+    html += `<div class="mls-stat"><div class="mls-stat-value">${today.total || 0}</div><div class="mls-stat-label">Total Leads</div></div>`;
+    html += `<div class="mls-stat"><div class="mls-stat-value">${today.with_phone || 0}</div><div class="mls-stat-label">With Phone</div></div>`;
+    html += `<div class="mls-stat"><div class="mls-stat-value">${today.with_email || 0}</div><div class="mls-stat-label">With Email</div></div>`;
+    html += '</div>';
+
+    // Chart
+    if (history.length > 0) {
+        const maxCount = Math.max(...history.map(h => h.count), 1);
+        html += '<div class="mls-chart">';
+        history.forEach(h => {
+            const pct = (h.count / maxCount) * 100;
+            const label = h.date.split('-').slice(1).join('/');
+            html += `<div class="mls-bar" style="height:${Math.max(pct, 5)}%" title="${h.count} leads on ${h.date}"><div class="mls-bar-label">${label}</div></div>`;
+        });
+        html += '</div>';
+    }
+
+    if (data.total_all_time) {
+        html += `<div style="text-align:center; margin-top:24px; font-size:12px; color:var(--text-muted)">${data.total_all_time.toLocaleString()} total leads tracked</div>`;
+    }
+
+    document.getElementById('mlsBody').innerHTML = html;
+
+    // Stats bar — leads this week
+    const weekTotal = history.reduce((sum, h) => sum + h.count, 0);
+    document.getElementById('statLeadsWeek').textContent = weekTotal.toLocaleString();
+}
+
+async function loadCredits() {
+    const data = await fetchJSON('/api/tracerfy');
+    if (!data) return;
+
+    const balance = data.balance || 0;
+    document.getElementById('statCredits').textContent = balance.toLocaleString();
+    const runsLeft = Math.floor(balance / 900);
+    document.getElementById('statCreditsRuns').textContent = `~${runsLeft} daily runs left`;
+}
+
+// ── Stale Listings ──────────────────────────────────
+async function loadStaleListings() {
+    const data = await fetchJSON('/api/stale-listings?days=200');
+    if (!data) return;
+
+    const stale = data.stale_listings || [];
+    const section = document.getElementById('staleSection');
+
+    if (stale.length === 0) {
+        section.style.display = 'none';
+        return;
+    }
+
+    section.style.display = 'block';
+    document.getElementById('staleBadge').textContent = stale.length + ' listings';
+
+    let html = '<table class="stale-table"><thead><tr>';
+    html += '<th>DOM</th><th>Address</th><th>Contact</th><th>Listed</th><th>Price</th>';
+    html += '</tr></thead><tbody>';
+
+    stale.forEach(s => {
+        html += `<tr>
+            <td><span class="stale-dom">${s.dom}</span></td>
+            <td class="stale-addr">${s.name}</td>
+            <td class="stale-contact">${s.contact || '\u2014'}</td>
+            <td style="color: var(--text-muted)">${s.created}</td>
+            <td class="stale-price">${fmtFull$(s.price)}</td>
+        </tr>`;
+    });
+
+    html += '</tbody></table>';
+    document.getElementById('staleBody').innerHTML = html;
+}
+
+// ── Transactions (Listings + Pending) ────────────────────
+
+async function loadTransactions() {
+    const data = await fetchJSON('/api/transactions');
+    if (!data) return;
+
+    const listings = data.active_listings || [];
+    const pending = data.pending_deals || [];
+
+    // Active Listings card
+    if (listings.length === 0) {
+        document.getElementById('listingsBody').innerHTML = '<div class="empty">No active listings</div>';
+    } else {
+        let html = '';
+        listings.forEach(d => {
+            const contact = d.contact || '';
+            const pipeline = d.pipeline || '';
+            html += `
+                <div class="listing-item">
+                    <div>
+                        <div class="listing-address">${d.name || 'Untitled'}</div>
+                        <div class="listing-meta">${pipeline}${contact ? ' \u00b7 ' + contact : ''}</div>
+                    </div>
+                    <div class="listing-price">${fmtFull$(d.price)}</div>
+                </div>`;
+        });
+        document.getElementById('listingsBody').innerHTML = html;
+    }
+    document.getElementById('listingsBadge').textContent = listings.length + ' listings';
+
+    // Pending Transactions card
+    if (pending.length === 0) {
+        document.getElementById('pendingBody').innerHTML = '<div class="empty">No pending transactions</div>';
+    } else {
+        let html = '';
+        pending.forEach((d, idx) => {
+            const isBuyer = d.pipeline.toLowerCase().includes('buyer');
+            const sideClass = isBuyer ? 'buyer' : 'seller';
+            const sideLabel = isBuyer ? 'Buyer' : 'Seller';
+            const closeDate = d.projectedCloseDate;
+            const closeFmt = closeDate ? formatClosingDate(closeDate) : 'TBD';
+            const closeClass = getCloseDateClass(closeDate);
+            const txnId = 'txn-' + idx;
+
+            html += `
+                <div class="txn-item" id="${txnId}" onclick="toggleTxn('${txnId}')">
+                    <div class="txn-header">
+                        <div class="txn-left">
+                            <div class="txn-address">${d.name || 'Untitled'}</div>
+                            <div class="txn-meta">
+                                <span class="txn-side ${sideClass}">${sideLabel}</span>
+                                <span>${d.contact || ''}</span>
+                            </div>
+                        </div>
+                        <div class="txn-right">
+                            <div class="txn-price">${fmtFull$(d.price)}</div>
+                            <div class="txn-close-date ${closeClass}">Close: ${closeFmt}</div>
+                        </div>
+                        <span class="txn-chevron">▶</span>
+                    </div>
+                    <div class="txn-timeline" id="${txnId}-timeline">
+                        <div class="timeline-inner">
+                            ${buildTimeline(d)}
+                        </div>
+                    </div>
+                </div>`;
+        });
+        document.getElementById('pendingBody').innerHTML = html;
+    }
+
+    const totalPendingValue = pending.reduce((s, d) => s + (d.price || 0), 0);
+    document.getElementById('pendingBadge').textContent = pending.length + ' deals \u00b7 ' + fmt$(totalPendingValue);
+}
+
+function toggleTxn(txnId) {
+    const item = document.getElementById(txnId);
+    const timeline = document.getElementById(txnId + '-timeline');
+    if (!item || !timeline) return;
+    item.classList.toggle('expanded');
+    timeline.classList.toggle('open');
+}
+
+function getCloseDateClass(dateStr) {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    const now = new Date();
+    const daysUntil = Math.ceil((d - now) / 86400000);
+    if (daysUntil < 0) return 'urgent';
+    if (daysUntil <= 14) return 'soon';
+    return '';
+}
+
+function getTimelineDotClass(dateStr) {
+    if (!dateStr) return 'empty';
+    const d = new Date(dateStr);
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const eventDay = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    const diff = Math.ceil((eventDay - today) / 86400000);
+    if (diff < 0) return 'completed';
+    if (diff === 0) return 'today';
+    if (diff <= 3) return 'upcoming';
+    return 'upcoming';
+}
+
+function getTimelineDateClass(dateStr) {
+    if (!dateStr) return 'empty';
+    const d = new Date(dateStr);
+    const now = new Date();
+    const daysUntil = Math.ceil((d - now) / 86400000);
+    if (daysUntil < 0) return '';
+    if (daysUntil <= 3) return 'soon';
+    return '';
+}
+
+function buildTimeline(deal) {
+    const events = [
+        { label: 'Earnest Money', date: deal.earnestMoneyDueDate },
+        { label: 'Due Diligence', date: deal.dueDiligenceDate },
+        { label: 'Mutual Accept', date: deal.mutualAcceptanceDate },
+        { label: 'Walk-Through', date: deal.finalWalkThroughDate },
+        { label: 'Closing', date: deal.projectedCloseDate },
+        { label: 'Possession', date: deal.possessionDate },
+    ];
+
+    // Filter to only show events that have dates + always show closing
+    const shown = events.filter(e => e.date || e.label === 'Closing' || e.label === 'Due Diligence' || e.label === 'Earnest Money');
+
+    return shown.map(e => {
+        const dotClass = e.date ? getTimelineDotClass(e.date) : 'empty';
+        const dateClass = e.date ? getTimelineDateClass(e.date) : 'empty';
+        const dateFmt = e.date ? formatClosingDate(e.date) : '\u2014';
+        return `
+            <div class="timeline-event">
+                <div class="timeline-dot ${dotClass}"></div>
+                <div class="timeline-label">${e.label}</div>
+                <div class="timeline-date ${dateClass}">${dateFmt}</div>
+            </div>`;
+    }).join('');
+}
+
+// ── Pipeline Expand/Collapse ────────────────────────────────
+function toggleStageDeals(stageId, stageEl) {
+    const dealsDiv = document.getElementById(stageId);
+    if (!dealsDiv) return;
+    dealsDiv.classList.toggle('open');
+    stageEl.classList.toggle('expanded');
+}
+
+function formatClosingDate(dateStr) {
+    if (!dateStr) return 'TBD';
+    const d = new Date(dateStr);
+    if (isNaN(d)) return dateStr;
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+// ── Init & Refresh ─────────────────────────────────────────
+async function refreshAll() {
+    await Promise.all([
+        loadDeals(),
+        loadTransactions(),
+        loadStaleListings(),
+        loadCalendar(),
+        loadTasks(),
+        loadMLS(),
+        loadCredits(),
+    ]);
+    document.getElementById('lastUpdated').textContent = 
+        'Updated ' + new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+}
+
+// Initial load
+refreshAll();
+
+// Auto-refresh every 15 minutes
+setInterval(refreshAll, 15 * 60 * 1000);
+</script>
+</body>
+</html>

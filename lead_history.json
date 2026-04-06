@@ -1,0 +1,29 @@
+{
+  "leads": {
+    "1e1a1bea951ae4fe83715c269af9106f": {
+      "mls_number": "TEST001",
+      "address": "123 Test St",
+      "city": "Test City",
+      "first_seen": "2026-04-05T12:18:09.352886",
+      "lead_type": null,
+      "status": "new"
+    },
+    "be36e8fb607a4012ac97e12b65f317da": {
+      "mls_number": "TEST002",
+      "address": "456 Test Ave",
+      "city": "Test Town",
+      "first_seen": "2026-04-05T12:18:09.352957",
+      "lead_type": null,
+      "status": "new"
+    },
+    "1f34910d0c37ef59de4a09fada333dd7": {
+      "mls_number": "TEST003",
+      "address": "789 Test Blvd",
+      "city": "Test Village",
+      "first_seen": "2026-04-05T12:18:09.352976",
+      "lead_type": null,
+      "status": "new"
+    }
+  },
+  "last_updated": "2026-04-06T06:04:22.918708"
+}

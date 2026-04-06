@@ -1,0 +1,538 @@
+[
+  {
+    "id": 94,
+    "name": "Suspects",
+    "updated": "2025-01-29",
+    "created": "2025-01-29",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 93,
+    "name": "Lead Check Action Plan for Reassignment",
+    "updated": "2024-12-09",
+    "created": "2024-11-18",
+    "used": false,
+    "steps": 20
+  },
+  {
+    "id": 92,
+    "name": "New Home Placer",
+    "updated": "2024-09-23",
+    "created": "2024-09-23",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 91,
+    "name": "DCM Version 1-8 Text & Email Updated",
+    "updated": "2024-05-03",
+    "created": "2024-05-03",
+    "used": false,
+    "steps": 48
+  },
+  {
+    "id": 90,
+    "name": "DCM Version 1-8 Text Only",
+    "updated": "2024-05-03",
+    "created": "2024-05-02",
+    "used": false,
+    "steps": 24
+  },
+  {
+    "id": 89,
+    "name": "DCM Version 1-8 Text & Email",
+    "updated": "2024-05-02",
+    "created": "2024-05-02",
+    "used": false,
+    "steps": 37
+  },
+  {
+    "id": 88,
+    "name": "DCM Cold FollowUp Sellers",
+    "updated": "2024-05-02",
+    "created": "2024-05-02",
+    "used": false,
+    "steps": 16
+  },
+  {
+    "id": 87,
+    "name": "DCM Text Only Version 4 Ameree",
+    "updated": "2024-04-12",
+    "created": "2024-03-25",
+    "used": false,
+    "steps": 2
+  },
+  {
+    "id": 86,
+    "name": "DCM Text Only Version 3 Ameree",
+    "updated": "2024-03-25",
+    "created": "2024-03-25",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 85,
+    "name": "Broker Open 627 Bonaventure Dr.",
+    "updated": "2024-03-20",
+    "created": "2024-03-20",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 83,
+    "name": "DCM Version 2 Text & Email Ameree",
+    "updated": "2024-03-18",
+    "created": "2024-03-18",
+    "used": false,
+    "steps": 6
+  },
+  {
+    "id": 81,
+    "name": "DCM 10 Days Ameree",
+    "updated": "2024-03-18",
+    "created": "2024-03-18",
+    "used": false,
+    "steps": 27
+  },
+  {
+    "id": 80,
+    "name": "DCM Version 2 Email Ameree",
+    "updated": "2024-03-18",
+    "created": "2024-03-18",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 79,
+    "name": "DCM Version 2 Text Ameree",
+    "updated": "2024-03-18",
+    "created": "2024-03-18",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 78,
+    "name": "DCM Version 1 Text & Email Ameree",
+    "updated": "2024-03-18",
+    "created": "2024-03-18",
+    "used": false,
+    "steps": 6
+  },
+  {
+    "id": 77,
+    "name": "DCM Version 1 Text Ameree",
+    "updated": "2024-03-18",
+    "created": "2024-03-18",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 75,
+    "name": "DCM Cold FollowUp",
+    "updated": "2024-03-07",
+    "created": "2024-03-07",
+    "used": false,
+    "steps": 8
+  },
+  {
+    "id": 74,
+    "name": "DCM Watch FollowUp",
+    "updated": "2024-03-07",
+    "created": "2024-03-07",
+    "used": false,
+    "steps": 8
+  },
+  {
+    "id": 70,
+    "name": "DCM Version 1 Text & Email",
+    "updated": "2024-03-15",
+    "created": "2024-03-07",
+    "used": false,
+    "steps": 6
+  },
+  {
+    "id": 68,
+    "name": "DCM Version 1 Email Only",
+    "updated": "2024-03-07",
+    "created": "2024-03-07",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 64,
+    "name": "*KTS FSBO",
+    "updated": "2023-03-23",
+    "created": "2023-03-23",
+    "used": false,
+    "steps": 25
+  },
+  {
+    "id": 63,
+    "name": "*KTS Expired",
+    "updated": "2023-03-23",
+    "created": "2023-03-23",
+    "used": false,
+    "steps": 24
+  },
+  {
+    "id": 61,
+    "name": "Professor Barry Ylopo 2.0 Buyer",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 13
+  },
+  {
+    "id": 60,
+    "name": "Professor Barry\u2019s Ylopo Seller Drip 2.0 DAVINA",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 13
+  },
+  {
+    "id": 59,
+    "name": "Ylopo New Lead Drip Campaign (NEWEST - No Initial Text)",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 39
+  },
+  {
+    "id": 58,
+    "name": "Ylopo Seller Lead Drip (No Initial Text)",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 5
+  },
+  {
+    "id": 57,
+    "name": "Ylopo Realtor Email Drip (No Initial Text)",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 9
+  },
+  {
+    "id": 56,
+    "name": "Working with Another Agent",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 55,
+    "name": "Ylopo Open House",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 54,
+    "name": "Ylopo New Lead Drip Campaign (NEWEST)",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 39
+  },
+  {
+    "id": 53,
+    "name": "SELLER - 388 Day Plan **Review Content before Using this Action ",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 88
+  },
+  {
+    "id": 52,
+    "name": "BUYER - 388 Day Plan **Review Content before Using this Action P",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 88
+  },
+  {
+    "id": 51,
+    "name": "21 Day Follow-Up Plan **Review Content before Using this Action ",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 21
+  },
+  {
+    "id": 50,
+    "name": "Ylopo+LCA Drip",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 11
+  },
+  {
+    "id": 49,
+    "name": "Ylopo Wrong Phone Drip",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 48,
+    "name": "Ylopo Working with Another Agent",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 3
+  },
+  {
+    "id": 46,
+    "name": "YLOPO ONLY - Showing Request",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 45,
+    "name": "YLOPO ONLY - Info Request",
+    "updated": "2023-01-25",
+    "created": "2023-01-25",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 41,
+    "name": "*KTS Pause action plans",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 40,
+    "name": "*KTS Sphere",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 39,
+    "name": "*KTS Need to know if buyer or seller",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 34,
+    "name": "*KTS Remove Homebot tag",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 33,
+    "name": "*KTS Homebot Engagement",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 16
+  },
+  {
+    "id": 29,
+    "name": "*KTS Branded Website - New Form",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": true,
+    "steps": 15
+  },
+  {
+    "id": 28,
+    "name": "*KTS New Renter",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 19
+  },
+  {
+    "id": 25,
+    "name": "*KTS tag buyer",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": true,
+    "steps": 1
+  },
+  {
+    "id": 24,
+    "name": "*KTS New Seller - tag seller only",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 23,
+    "name": "*KTS New Home Valuation",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": true,
+    "steps": 20
+  },
+  {
+    "id": 22,
+    "name": "*KTS New Open House Lead",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 33
+  },
+  {
+    "id": 21,
+    "name": "*KTS New Seller Lead",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": false,
+    "steps": 20
+  },
+  {
+    "id": 20,
+    "name": "*KTS New Buyer Lead - referral source",
+    "updated": "2022-12-10",
+    "created": "2022-12-10",
+    "used": true,
+    "steps": 34
+  },
+  {
+    "id": 18,
+    "name": "Past client saved a home",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 2
+  },
+  {
+    "id": 16,
+    "name": "Assign to a lender",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 2
+  },
+  {
+    "id": 15,
+    "name": "Birthday Email on Day of Birthday",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 14,
+    "name": "Unconverted and active now. Call!",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 1
+  },
+  {
+    "id": 13,
+    "name": "Person changed behavior and is active again after 14 days",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 4
+  },
+  {
+    "id": 12,
+    "name": "New Inquiry for an existing lead",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 7
+  },
+  {
+    "id": 11,
+    "name": "Lender Pre-Approval Plan",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 2
+  },
+  {
+    "id": 10,
+    "name": "Lender Lead Plan",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 12
+  },
+  {
+    "id": 9,
+    "name": "Stale Lead Engagement",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 4
+  },
+  {
+    "id": 8,
+    "name": "Seller - Home Evaluation Request",
+    "updated": "2024-11-18",
+    "created": "2021-01-17",
+    "used": true,
+    "steps": 5
+  },
+  {
+    "id": 6,
+    "name": "Open House Leads",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 4
+  },
+  {
+    "id": 5,
+    "name": "Facebook Lead Ads",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 6
+  },
+  {
+    "id": 4,
+    "name": "Buyer New Lead Website Registration",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 5
+  },
+  {
+    "id": 3,
+    "name": "Buyer Long Term Nurture",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 11
+  },
+  {
+    "id": 2,
+    "name": "Seller Lead Drip",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 6
+  },
+  {
+    "id": 1,
+    "name": "Zillow / Trulia / Realtor.com with text message",
+    "updated": "2021-01-17",
+    "created": "2021-01-17",
+    "used": false,
+    "steps": 4
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "agent_name": "lead-monitor-agent",
+  "role": "Lead Monitoring & Qualification",
+  "model": "claude-3-5-haiku-20241022",
+  "check_frequency": "5m",
+  "escalation_rules": {
+    "high_value_threshold": 500000,
+    "urgent_response_time": 3600,
+    "complex_inquiry_keywords": ["commercial", "investment", "development", "portfolio"]
+  },
+  "lead_sources": [
+    {
+      "name": "Dave Ramsey",
+      "gmail_query": "from:ramseysolutions.com OR subject:\"Dave Ramsey\" OR from:daveramsey.com",
+      "priority": "high"
+    },
+    {
+      "name": "HomeLight",
+      "gmail_query": "from:homelight.com OR subject:homelight OR from:agent.homelight.com",
+      "priority": "high"
+    },
+    {
+      "name": "Direct Inquiries", 
+      "gmail_query": "subject:\"real estate\" OR subject:buying OR subject:selling",
+      "priority": "medium"
+    }
+  ],
+  "notification_targets": {
+    "whatsapp_group": "120363029651955145@g.us",
+    "escalation_session": "agent:main:main"
+  },
+  "tools": ["gmail", "whatsapp", "fub_api", "lead_scoring"],
+  "status": "initializing"
+}

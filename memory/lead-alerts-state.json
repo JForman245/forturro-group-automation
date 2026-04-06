@@ -1,0 +1,44 @@
+{
+  "last_checked": "2026-04-05T13:01:35Z",
+  "last_seen_message_ids": [
+    "19d44c1a42b10b1f",
+    "19d4652248f49dac",
+    "19d466497cbcd04d",
+    "19d48ef96fefadfb",
+    "19d4a15354f3909c",
+    "19d4b4f6983b19f0",
+    "19d4b596f3f22ca7",
+    "19d4ec6dfb343eb1",
+    "19d4f93dc496920b",
+    "19d4fa73182439ec",
+    "19d4fe064a2f9582",
+    "19d4fe44ca7287dd",
+    "19d537c4910d373e",
+    "19d5384552b06dfb",
+    "19d59a2b540c1d7b",
+    "19d59a71bfb0bd5b",
+    "19d59da0ecef99a8",
+    "19d59e412c1ef368",
+    "19d5b2cb0582662e",
+    "19d5d98e05e3066b"
+  ],
+  "last_alert_sent": "2026-04-05T12:59:36Z",
+  "daveRamsey": {
+    "lastChecked": "2026-04-05T12:55:00Z",
+    "lastAlertedIds": [
+      "19d5d98e05e3066b",
+      "19d5b2cb0582662e"
+    ],
+    "searchQuery": "from:followupboss subject:\"DaveRamsey\""
+  },
+  "homelight": {
+    "lastChecked": "2026-04-05T12:55:00Z",
+    "lastAlertedIds": [
+      "19d59e412c1ef368",
+      "19d59da0ecef99a8",
+      "19d59a71bfb0bd5b",
+      "19d59a2b540c1d7b"
+    ],
+    "searchQuery": "from:\"homelight referrals\" OR subject:\"new referral from homelight\""
+  }
+}

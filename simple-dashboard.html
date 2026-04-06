@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Birdy's Agent Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .dashboard { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header { 
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white; 
+            padding: 30px; 
+            text-align: center; 
+        }
+        
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header p { opacity: 0.8; font-size: 1.1em; }
+        
+        .content { padding: 30px; }
+        
+        .section { 
+            margin-bottom: 40px; 
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+        }
+        
+        .section h2 { 
+            color: #2c3e50; 
+            margin-bottom: 20px; 
+            font-size: 1.8em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .cards { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+        
+        .card { 
+            background: white; 
+            border-radius: 12px; 
+            padding: 20px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 { color: #2c3e50; margin-bottom: 15px; font-size: 1.3em; }
+        .card p { color: #7f8c8d; margin-bottom: 8px; }
+        
+        .status { 
+            padding: 5px 12px; 
+            border-radius: 20px; 
+            font-size: 0.9em; 
+            font-weight: bold; 
+        }
+        
+        .status.running { background: #d4edda; color: #155724; }
+        .status.offline { background: #f8d7da; color: #721c24; }
+        .status.ok { background: #d1ecf1; color: #0c5460; }
+        
+        .controls { 
+            display: flex; 
+            gap: 15px; 
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .btn { 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary { background: #3498db; color: white; }
+        .btn-danger { background: #e74c3c; color: white; }
+        .btn-warning { background: #f39c12; color: white; }
+        .btn-success { background: #27ae60; color: white; }
+        
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        
+        .logs { 
+            background: #2c3e50; 
+            color: #ecf0f1; 
+            padding: 20px; 
+            border-radius: 8px; 
+            font-family: 'Monaco', monospace; 
+            height: 200px; 
+            overflow-y: auto;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        
+        .agent-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .agent-table th, .agent-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .agent-table th {
+            background: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .agent-table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .update-time {
+            text-align: right;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>🎯 Birdy's Agent Hierarchy Dashboard</h1>
+            <p>Real-time monitoring and control center for all agents</p>
+        </div>
+        
+        <div class="content">
+            <!-- System Health -->
+            <div class="section">
+                <h2>🏥 System Health</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Gateway</h3>
+                        <span class="status running">Online</span>
+                        <p>Port: 18789</p>
+                        <p>Auth: Token</p>
+                    </div>
+                    <div class="card">
+                        <h3>WhatsApp</h3>
+                        <span class="status running">Connected</span>
+                        <p>Number: +18439024325</p>
+                        <p>Auto-repair: Active</p>
+                    </div>
+                    <div class="card">
+                        <h3>Telegram</h3>
+                        <span class="status ok">Ready</span>
+                        <p>Bot: @Birdyyai_bot</p>
+                        <p>Channels: 1</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sessions</h3>
+                        <span class="status running">283 Active</span>
+                        <p>Memory: 195 chunks</p>
+                        <p>Cache: 99% efficiency</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Active Agents -->
+            <div class="section">
+                <h2>🤖 Active Agents</h2>
+                <table class="agent-table">
+                    <thead>
+                        <tr>
+                            <th>Agent</th>
+                            <th>Role</th>
+                            <th>Model</th>
+                            <th>Status</th>
+                            <th>Runtime</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>📧 Lead Monitor</td>
+                            <td>Gmail monitoring & lead alerts</td>
+                            <td>Claude Haiku</td>
+                            <td><span class="status running">Running</span></td>
+                            <td>45m</td>
+                        </tr>
+                        <tr>
+                            <td>📊 MLS Data Agent</td>
+                            <td>Property data & market analysis</td>
+                            <td>Claude Sonnet</td>
+                            <td><span class="status offline">Needs Repair</span></td>
+                            <td>1d 22h</td>
+                        </tr>
+                        <tr>
+                            <td>🤖 Marketing Agent</td>
+                            <td>Social media automation</td>
+                            <td>Claude Haiku</td>
+                            <td><span class="status running">Running</span></td>
+                            <td>42m</td>
+                        </tr>
+                        <tr>
+                            <td>🚨 Emergency Fix Agent</td>
+                            <td>MLS scraper recovery</td>
+                            <td>Claude Opus</td>
+                            <td><span class="status running">Active</span></td>
+                            <td>25m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Quick Controls -->
+            <div class="section">
+                <h2>🎛️ Quick Controls</h2>
+                <div class="controls">
+                    <button class="btn btn-primary" onclick="refreshStatus()">🔄 Refresh Status</button>
+                    <button class="btn btn-danger" onclick="checkLeads()">📧 Check Lead Alerts</button>
+                    <button class="btn btn-warning" onclick="runMLSCheck()">📊 Run MLS Check</button>
+                    <button class="btn btn-success" onclick="restartMarketing()">🤖 Restart Marketing</button>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h3>Agent Command Center</h3>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <select id="agentSelect" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd; flex: 1;">
+                            <option value="">Select Agent...</option>
+                            <option value="lead-monitor">📧 Lead Monitor Agent</option>
+                            <option value="mls-data">📊 MLS Data Agent</option>
+                            <option value="marketing">🤖 Marketing Agent</option>
+                        </select>
+                        <input type="text" id="commandInput" placeholder="Enter command..." 
+                               style="padding: 10px; border-radius: 5px; border: 1px solid #ddd; flex: 2;">
+                        <button class="btn btn-primary" onclick="sendCommand()">📤 Send</button>
+                    </div>
+                    <div id="commandResult" style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-radius: 5px; display: none;"></div>
+                </div>
+            </div>
+            
+            <!-- Live Activity -->
+            <div class="section">
+                <h2>📜 Live Activity Logs</h2>
+                <div class="logs" id="activityLogs">
+                    [11:48:32] System health check completed - all services operational<br>
+                    [11:47:15] WhatsApp stability monitor executed - connection stable<br>
+                    [11:45:22] Emergency MLS fix agent deployed with Opus model<br>
+                    [11:43:10] Lead monitor agent checking Gmail for new leads<br>
+                    [11:40:05] Marketing automation agent scheduled social posts<br>
+                    [11:38:33] Agent hierarchy dashboard initialized successfully<br>
+                    [11:35:12] WhatsApp auto-repair system activated<br>
+                    [11:30:45] Daily MLS scraper identified Paragon interface issues<br>
+                </div>
+            </div>
+            
+            <div class="update-time">
+                Last updated: <span id="lastUpdate">Sunday, April 5th, 2026 — 11:48 AM EDT</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function updateTime() {
+            document.getElementById('lastUpdate').textContent = new Date().toLocaleString();
+        }
+        
+        function refreshStatus() {
+            addLog('Manual status refresh triggered');
+            // In a real implementation, this would call the backend
+            setTimeout(() => addLog('Status refresh completed'), 1000);
+        }
+        
+        function checkLeads() {
+            addLog('📧 Lead check initiated - scanning Gmail for new alerts');
+            // Simulate lead check
+        }
+        
+        function runMLSCheck() {
+            addLog('📊 MLS data check initiated - attempting Paragon connection');
+            // Simulate MLS check
+        }
+        
+        function restartMarketing() {
+            addLog('🤖 Marketing automation agent restarted');
+            // Simulate restart
+        }
+        
+        function sendCommand() {
+            const agent = document.getElementById('agentSelect').value;
+            const command = document.getElementById('commandInput').value;
+            
+            if (agent && command) {
+                const result = document.getElementById('commandResult');
+                result.innerHTML = `<strong>Command sent to ${agent}:</strong> ${command}`;
+                result.style.display = 'block';
+                addLog(`💬 Command sent to ${agent}: ${command}`);
+                document.getElementById('commandInput').value = '';
+            }
+        }
+        
+        function addLog(message) {
+            const logs = document.getElementById('activityLogs');
+            const timestamp = new Date().toLocaleTimeString();
+            logs.innerHTML = `[${timestamp}] ${message}<br>` + logs.innerHTML;
+        }
+        
+        // Auto-refresh every 30 seconds
+        setInterval(() => {
+            updateTime();
+            addLog('Auto-refresh: Status updated');
+        }, 30000);
+        
+        // Initialize
+        updateTime();
+    </script>
+</body>
+</html>

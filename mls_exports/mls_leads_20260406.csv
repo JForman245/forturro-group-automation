@@ -1,0 +1,13 @@
+Category,StatusID,Address,City,Zip,Area,SystemPrice,Class,Keyword1,Keyword2,Keyword3,Type,_DisplayId,_ID,display_id,int2_3
+EXPIRED,EXPIRED,2600 South Ocean Blvd.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,79900,CONDO/TOWNHOUSE,Efficiency,1,0,Condo,2320205,2320205:0,2320205,$181
+EXPIRED,EXPIRED,5905 South Kings Hwy.,Myrtle Beach,29575,16J Myrtle Beach Area--includes Prestwick & Lakewood,89900,CONDO/TOWNHOUSE,Efficiency,1,0,Condo,2507283,2507283:0,2507283,$798
+EXPIRED,EXPIRED,200 76th Ave. N,Myrtle Beach,29572,16D Myrtle Beach Area--48th Ave N to 79th Ave N,182500,CONDO/TOWNHOUSE,1,1,0,Condo,2508528,2508528:0,2508528,$855
+EXPIRED,EXPIRED,126 Scotch Broom Dr.,Little River,29566,04B Little River Area--North of Hwy 9,190000,CONDO/TOWNHOUSE,2,2,0,Condo,2521628,2521628:0,2521628,$299
+EXPIRED,EXPIRED,6001 - D13 S Kings Hwy.,Myrtle Beach,29575,16J Myrtle Beach Area--includes Prestwick & Lakewood,199900,RESIDENTIAL,3,2,0,Manufactured Leased Land,2523753,2523753:0,2523753,$0
+EXPIRED,EXPIRED,2016 Pint Circle,Longs,29568,08A Loris to Conway Area--South of Loris above Rt 22,214999,RESIDENTIAL,3,2,0,Manufactured with Land,2605766,2605766:0,2605766,$0
+EXPIRED,EXPIRED,6015 Catalina Dr.,North Myrtle Beach,29582,10C North Myrtle Beach Area--Barefoot Resort,227250,CONDO/TOWNHOUSE,2,2,0,Condo,2524648,2524648:0,2524648,$573
+EXPIRED,EXPIRED,203 Marauder Dr.,Longs,29568,03A Longs to Little River Area--North of 9 between Waccamaw River & Rt. 57,399999,RESIDENTIAL,5,3,0,Detached,2605768,2605768:0,2605768,$68
+EXPIRED,EXPIRED,205 Ocean Commons Dr.,Surfside Beach,29575,28A Surfside Area--Surfside Triangle 544 to Glenns Bay,545000,RESIDENTIAL,3,2,1,Detached,2525125,2525125:0,2525125,$89
+EXPIRED,EXPIRED,2309 Seaseeker Ln.,Myrtle Beach,29577,16G Myrtle Beach Area--Southern Limit to 10TH Ave N,725000,RESIDENTIAL,4,3,1,Detached with HPR,2508519,2508519:0,2508519,$270
+EXPIRED,EXPIRED,3060 Marsh Island Dr.,Myrtle Beach,29579,10B Myrtle Beach Area--Carolina Forest,739900,RESIDENTIAL,4,3,0,Detached,2600290,2600290:0,2600290,$157
+EXPIRED,EXPIRED,4501 N Ocean Blvd.,North Myrtle Beach,29582,11A North Myrtle Beach Area--Cherry Grove,1270000,MULTI-FAMILY,,,,Apartments,2603127,2603127:0,2603127,

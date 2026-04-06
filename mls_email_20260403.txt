@@ -1,0 +1,13 @@
+MLS Scraper — Friday April 3, 2026 (6:02 AM run)
+
+22 new leads captured and skip-traced:
+- 17 withdrawn listings
+- 5 expired listings
+
+Skip trace: 22/22 enriched via Tracerfy (38 credits used, 9,234 remaining)
+
+CSV attached separately. Not uploaded to FUB yet — awaiting your review.
+
+No issues with the scraper. The auto-email step failed due to a PATH issue (gog CLI not found by the cron Python script) — I sent this manually. I'll fix the PATH in the script so it self-sends tomorrow.
+
+— Birdy
