@@ -28,6 +28,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver import ActionChains
 from dotenv import load_dotenv
 
 load_dotenv('/Users/claw1/.openclaw/workspace/.env.mls')
@@ -51,6 +52,14 @@ with open(f"{WORKSPACE}/.env.fub") as f:
 def setup_driver():
     chrome_options = Options()
     chrome_options.add_argument("--window-size=1400,1000")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_experimental_option('prefs', {
+        'download.default_directory': EXPORT_DIR,
+        'download.prompt_for_download': False,
+        'download.directory_upgrade': True,
+        'safebrowsing.enabled': True,
+    })
     return webdriver.Chrome(options=chrome_options)
 
 
@@ -58,8 +67,8 @@ def login(driver):
     print("⏳ Logging into CCAR...")
     driver.get("https://ccar.mysolidearth.com/portal")
     time.sleep(5)
-    driver.find_elements(By.CSS_SELECTOR, ".v-radio")[1].click()
-    time.sleep(2)
+    driver.execute_script("document.querySelector(\"input[type='radio'][value='email']\").click()")
+    time.sleep(1)
     driver.find_element(By.CSS_SELECTOR, "input[type='email'][name='email']").send_keys(MLS_USERNAME)
     driver.find_element(By.CSS_SELECTOR, "input[type='password']").send_keys(MLS_PASSWORD)
     driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
@@ -78,179 +87,173 @@ def login(driver):
         document.querySelectorAll('.ui-dialog').forEach(function(d){d.style.display='none';});
         document.querySelectorAll('.ui-dialog-titlebar-close').forEach(function(b){try{b.click();}catch(e){}});
     """)
+    try:
+        driver.find_element(By.ID, 'Close').click()
+        time.sleep(1)
+    except:
+        pass
     time.sleep(3)
     print("✅ Logged into Paragon")
 
 
-def scrape_expired(driver):
-    """Scrape expired via Market Monitor (last 2 days)"""
-    print("\n🔍 Scraping EXPIRED (last 2 days)...")
-    
-    # Set daysBack to 2 first
-    driver.switch_to.default_content()
-    iframes = driver.find_elements(By.TAG_NAME, "iframe")
-    driver.switch_to.frame(iframes[2])  # HomeTab
-    
-    driver.execute_script("""
-        var db = document.getElementById('mmdaysback');
-        if(db){ db.value = '2'; db.dispatchEvent(new Event('change',{bubbles:true})); }
-    """)
-    time.sleep(1)
-    
-    driver.execute_script('document.getElementById("mm_1").click();')
-    print("  Clicked Market Monitor > Expired (daysBack=2)")
-    time.sleep(12)
-    
-    # Navigate to results > Spreadsheet sub-iframe
-    driver.switch_to.default_content()
-    iframes = driver.find_elements(By.TAG_NAME, "iframe")
-    
-    data = None
-    for i, iframe in enumerate(iframes):
-        src = iframe.get_attribute("src") or ""
-        if "MarketMonitor" in src:
-            driver.switch_to.frame(iframe)
-            subs = driver.find_elements(By.TAG_NAME, "iframe")
-            for j, sf in enumerate(subs):
-                ssrc = sf.get_attribute("src") or ""
-                if "Spreadsheet" in ssrc:
-                    driver.switch_to.frame(sf)
-                    time.sleep(3)
-                    data = driver.execute_script("""
-                        if(typeof jQuery==='undefined') return null;
-                        var g = jQuery('table.ui-jqgrid-btable, [id*=jqGrid]');
-                        if(!g.length) return null;
-                        var ids = g.jqGrid('getDataIDs');
-                        var rows = [];
-                        for(var i=0; i<ids.length; i++) rows.push(g.jqGrid('getRowData', ids[i]));
-                        return rows;
-                    """)
-                    driver.switch_to.parent_frame()
-                    break
-            driver.switch_to.default_content()
-            break
-    
-    if data:
-        clean = [clean_row(r, "EXPIRED") for r in data]
-        print(f"  ✅ {len(clean)} expired listings")
-        return clean
-    print("  ❌ No expired data")
-    return []
+def _export_results_csv(driver, category):
+    os.makedirs(EXPORT_DIR, exist_ok=True)
+    before_files = {p: os.path.getmtime(p) for p in glob.glob(f"{EXPORT_DIR}/*.csv")}
 
-
-def scrape_withdrawn(driver):
-    """Scrape withdrawn via Quick Search + Status Date sort (last 2 days)"""
-    print("\n🔍 Scraping WITHDRAWN (last 2 days)...")
-    
-    # Navigate to Search > Property
     driver.switch_to.default_content()
-    driver.execute_script('var l=document.querySelectorAll("a");for(var i=0;i<l.length;i++){if(l[i].textContent.trim()==="Search"){l[i].click();return;}}')
-    time.sleep(2)
-    driver.execute_script('var l=document.querySelectorAll("a");for(var i=0;i<l.length;i++){if(l[i].textContent.trim()==="Property"){l[i].click();return;}}')
-    time.sleep(5)
-    
-    # Find search form iframe
-    for i, iframe in enumerate(driver.find_elements(By.TAG_NAME, "iframe")):
+    frames = driver.find_elements(By.TAG_NAME, 'iframe')
+    target = None
+    for i in range(len(frames)):
         try:
             driver.switch_to.default_content()
-            driver.switch_to.frame(iframe)
-            if driver.execute_script("return document.getElementById('f_11__1-2-3-4-5-6-7') !== null;"):
+            frames = driver.find_elements(By.TAG_NAME, 'iframe')
+            driver.switch_to.frame(frames[i])
+            text = driver.find_element(By.TAG_NAME, 'body').text
+            if 'Export' in text and 'BACK' in text:
+                target = i
                 break
         except:
             pass
-    
-    # Set Withdrawn status
-    field = driver.find_element(By.ID, 'f_11__1-2-3-4-5-6-7')
-    field.click()
-    time.sleep(0.5)
-    field.send_keys('With')
-    time.sleep(2)
-    driver.execute_script("""
-        var lis = document.querySelectorAll('.ac_results li');
-        for(var i=0;i<lis.length;i++){
-            if(lis[i].textContent.indexOf('WITHDRAWN')>=0){lis[i].click();return;}
-        }
-    """)
-    time.sleep(1)
-    
-    # Click Search
-    driver.execute_script("""
-        var btns = document.querySelectorAll('input[type=button],button');
-        for(var i=0;i<btns.length;i++){
-            if((btns[i].value||btns[i].textContent||'').trim()==='Search'){btns[i].click();return;}
-        }
-    """)
-    print("  Search submitted")
-    time.sleep(15)
-    
-    # Navigate to Spreadsheet: iframe[3] > sub[1]
+
+    if target is None:
+        print(f"  ❌ Could not find results frame for {category}")
+        return []
+
     driver.switch_to.default_content()
-    iframes = driver.find_elements(By.TAG_NAME, "iframe")
-    if len(iframes) < 4:
-        print("  ❌ Results iframe not found")
+    frames = driver.find_elements(By.TAG_NAME, 'iframe')
+    driver.switch_to.frame(frames[target])
+    export_link = driver.find_element(By.ID, 'Export')
+    ActionChains(driver).move_to_element(export_link).pause(0.5).click(export_link).perform()
+    time.sleep(1)
+    try:
+        driver.find_element(By.ID, 'ExportCSV').click()
+    except Exception:
+        driver.execute_script("var e=document.getElementById('ExportCSV'); if(e){e.click();}")
+    time.sleep(2)
+
+    driver.switch_to.default_content()
+    popup_btn = None
+    for _ in range(20):
+        try:
+            popup_btn = driver.find_element(By.CSS_SELECTOR, 'button#Export')
+            if popup_btn.is_displayed():
+                break
+        except Exception:
+            popup_btn = None
+        time.sleep(0.5)
+    try:
+        if popup_btn:
+            popup_btn.click()
+        else:
+            driver.execute_script("var b=document.querySelector('button#Export'); if(b) b.click();")
+    except Exception:
+        driver.execute_script("var b=document.querySelector('button#Export'); if(b) b.click();")
+
+    for _ in range(40):
+        after_files = {p: os.path.getmtime(p) for p in glob.glob(f"{EXPORT_DIR}/*.csv")}
+        changed_files = [
+            p for p, mtime in after_files.items()
+            if p not in before_files or mtime > before_files.get(p, 0)
+        ]
+        if changed_files:
+            break
+        time.sleep(0.5)
+
+    after_files = {p: os.path.getmtime(p) for p in glob.glob(f"{EXPORT_DIR}/*.csv")}
+    changed_files = [
+        p for p, mtime in after_files.items()
+        if p not in before_files or mtime > before_files.get(p, 0)
+    ]
+    if not changed_files:
+        print(f"  ❌ No CSV downloaded for {category}")
         return []
-    
-    driver.switch_to.frame(iframes[3])
-    subs = driver.find_elements(By.TAG_NAME, "iframe")
-    if len(subs) < 2:
-        print("  ❌ Spreadsheet sub-iframe not found")
-        return []
-    
-    driver.switch_to.frame(subs[1])
-    time.sleep(5)
-    
-    # Sort by Status Date: click header once (asc), then again (desc)
-    driver.execute_script("""
-        var headers = document.querySelectorAll('.ui-jqgrid-sortable, th div');
-        for(var i=0;i<headers.length;i++){
-            if(headers[i].textContent.trim().indexOf('Status Date')>=0){
-                headers[i].click(); return;
-            }
-        }
-    """)
+
+    csv_path = sorted(changed_files, key=os.path.getmtime)[-1]
+    rows = []
+    with open(csv_path, newline='', encoding='utf-8-sig') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            rows.append({
+                'Address': row.get('Address', '').strip(),
+                'City': row.get('City', '').strip(),
+                'Zip': row.get('Zip', '').strip(),
+                '_DisplayId': row.get('MLS #', '').strip(),
+                'SystemPrice': row.get('Price', '').replace('$', '').replace(',', '').strip(),
+                'Class': row.get('Class', '').strip(),
+                'Type': row.get('Type', '').strip(),
+                'StatusDate': row.get('Status Date', '').strip(),
+                'Category': category,
+            })
+    print(f"  ✅ Downloaded {len(rows)} {category.lower()} listings from CSV")
+    return rows
+
+
+def scrape_expired(driver):
+    """Scrape expired via Market Monitor and CSV export"""
+    print("\n🔍 Scraping EXPIRED (Market Monitor)...")
+    driver.switch_to.default_content()
+    driver.execute_script("if(document.getElementById('cboxOverlay')) document.getElementById('cboxOverlay').style.display='none'; if(document.getElementById('colorbox')) document.getElementById('colorbox').style.display='none';")
+    try:
+        driver.find_element(By.ID, 'Close').click()
+        time.sleep(1)
+    except:
+        pass
+    driver.switch_to.frame(driver.find_elements(By.TAG_NAME, 'iframe')[2])
+    driver.execute_script("var db=document.getElementById('mmdaysback'); if(db){db.value='2'; db.dispatchEvent(new Event('change',{bubbles:true}));}")
+    time.sleep(1)
+    driver.execute_script("document.getElementById('mm_1').click();")
+    print("  Clicked Market Monitor > Expired")
     time.sleep(10)
-    driver.execute_script("""
-        var headers = document.querySelectorAll('.ui-jqgrid-sortable, th div');
-        for(var i=0;i<headers.length;i++){
-            if(headers[i].textContent.trim().indexOf('Status Date')>=0){
-                headers[i].click(); return;
+    return _export_results_csv(driver, 'EXPIRED')
+
+
+def scrape_withdrawn(driver):
+    """Scrape withdrawn via Quick Search and CSV export"""
+    print("\n🔍 Scraping WITHDRAWN (last 7 days via Quick Search)...")
+    driver.get('http://ccar.paragonrels.com/')
+    time.sleep(8)
+    driver.switch_to.default_content()
+    driver.execute_script("if(document.getElementById('cboxOverlay')) document.getElementById('cboxOverlay').style.display='none'; if(document.getElementById('colorbox')) document.getElementById('colorbox').style.display='none';")
+    try:
+        driver.find_element(By.ID, 'Close').click()
+        time.sleep(1)
+    except:
+        pass
+    driver.switch_to.frame(driver.find_element(By.ID, 'HomeTab'))
+    try:
+        status = driver.find_element(By.ID, 'f_11__1-2-3-4-5-6-7')
+        status.clear()
+        status.send_keys('WD')
+        time.sleep(1)
+        driver.execute_script("""
+            var lis = document.querySelectorAll('.ac_results li');
+            for (var i = 0; i < lis.length; i++) {
+                var t = lis[i].textContent || '';
+                if (t.indexOf('WITHDRAWN') >= 0 || t.indexOf('WD') >= 0) { lis[i].click(); return; }
             }
-        }
-    """)
-    print("  Sorted by Status Date desc")
-    time.sleep(15)
-    
-    # Get data
-    data = driver.execute_script("""
-        if(typeof jQuery==='undefined') return null;
-        var g = jQuery('table.ui-jqgrid-btable, [id*=jqGrid]');
-        if(!g.length) return null;
-        var ids = g.jqGrid('getDataIDs');
-        var rows = [];
-        for(var i=0; i<ids.length; i++) rows.push(g.jqGrid('getRowData', ids[i]));
-        return rows;
-    """)
-    
-    if not data:
-        print("  ❌ No withdrawn data")
+        """)
+        time.sleep(1)
+        driver.execute_script("""
+            var s = document.getElementById('fo_f_621');
+            if (s) {
+                s.value = '8';
+                s.dispatchEvent(new Event('change', {bubbles: true}));
+            }
+        """)
+        time.sleep(1)
+        try:
+            status_date_high = driver.find_element(By.ID, 'f_621_High')
+            status_date_high.clear()
+            status_date_high.send_keys('Today')
+            time.sleep(1)
+        except Exception:
+            pass
+        driver.find_element(By.ID, 'Search1').click()
+        time.sleep(12)
+    except Exception as e:
+        print(f"  ❌ Quick Search fields not found: {e}")
         return []
-    
-    # Filter to last 2 days
-    cutoff = datetime.now() - timedelta(days=2)
-    clean_rows = []
-    for row in data:
-        cleaned = clean_row(row, "WITHDRAWN")
-        sd_str = cleaned.get("StatusDate", "")
-        if sd_str:
-            try:
-                sd = datetime.strptime(sd_str, "%m/%d/%Y")
-                if sd >= cutoff:
-                    clean_rows.append(cleaned)
-            except:
-                pass
-    
-    print(f"  ✅ {len(clean_rows)} withdrawn listings (last 2 days)")
-    return clean_rows
+    return _export_results_csv(driver, 'WITHDRAWN')
 
 
 def clean_row(row_dict, category):
@@ -507,6 +510,10 @@ def main():
                     lead.get("SystemPrice", ""), lead.get("Category", ""),
                     lead.get("Class", ""), lead.get("Type", "")
                 ])
+
+        exp_ct = len([l for l in all_leads if l.get("Category") == "EXPIRED"])
+        wth_ct = len([l for l in all_leads if l.get("Category") == "WITHDRAWN"])
+        print(f"\n📊 Verified counts: {exp_ct} expired, {wth_ct} withdrawn")
         
         # 6. Skip trace
         if args.skip_trace:
