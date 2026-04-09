@@ -324,7 +324,7 @@ def get_listing_sheet(address, output_path=None):
                     pdf_page.close()
                     return output_path
                 else:
-                    # It's an HTML page — use CDP printToPDF
+                    # It's an HTML page, use CDP printToPDF
                     print("   PDF URL returned HTML, using CDP printToPDF…")
                     pdf_page.wait_for_timeout(5000)
                     pdf_data = generate_cdp_pdf(pdf_page)
